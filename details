@@ -1,0 +1,3613 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <link rel="canonical" href="https://blog.csdn.net/zjiang1994/article/details/52779537"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="referrer" content="always">
+    <meta http-equiv="Cache-Control" content="no-siteapp" /><link rel="alternate" media="handheld" href="#" />
+    <meta name="shenma-site-verification" content="5a59773ab8077d4a62bf469ab966a63b_1497598848">
+        <meta name="csdn-baidu-search"  content='{"autorun":true,"install":true,"keyword":"scrapy爬虫框架入门实例 - Clew123的博客"}'>
+    
+    <link href="https://csdnimg.cn/public/favicon.ico" rel="SHORTCUT ICON">
+    <title>scrapy爬虫框架入门实例 - Clew123的博客 - CSDN博客</title>
+
+        
+                    <link rel="stylesheet" href="https://csdnimg.cn/release/phoenix/template/css/detail-d5bbc970f8.min.css">
+            
+            <script type="application/ld+json">{"@context":"https:\/\/ziyuan.baidu.com\/contexts\/cambrian.jsonld","@id":"https:\/\/blog.csdn.net\/zjiang1994\/article\/details\/52779537","appid":"1563894916825412","title":"scrapy\u722c\u866b\u6846\u67b6\u5165\u95e8\u5b9e\u4f8b - Clew123\u7684\u535a\u5ba2","images":["https:\/\/img-blog.csdn.net\/20170607090735845?watermark\/2\/text\/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemppYW5nMTk5NA==\/font\/5a6L5L2T\/fontsize\/400\/fill\/I0JBQkFCMA==\/dissolve\/70\/gravity\/SouthEast","https:\/\/img-blog.csdn.net\/20161010171303901","https:\/\/img-blog.csdn.net\/20161010171317394"],"pubDate":"2019-03-31T14:23:02"}</script>
+        
+          <link rel="stylesheet" href="https://csdnimg.cn/release/phoenix/themes/skin3-template/skin3-template-9b39979775.min.css">
+        <script type="text/javascript">
+        var username = "zjiang1994";
+        var userPermission = false;
+        var blog_address = "https://blog.csdn.net/zjiang1994";
+        var static_host = "https://csdnimg.cn/release/phoenix/";
+        var currentUserName = "";
+        var currentUserPermission = false;
+        var isShowAds = true;
+        var isOwner = false;
+        var loginUrl = "http://passport.csdn.net/account/login?from=https://blog.csdn.net/zjiang1994/article/details/52779537"
+        var blogUrl = "https://blog.csdn.net/";
+        //页面皮肤样式
+        var curSkin = "skin3-template";
+        // 第四范式所需数据
+        var articleTitles = "scrapy爬虫框架入门实例 - Clew123的博客";
+        var articleID = "52779537";
+        
+        var nickName = "Clew123";
+        var isCorporate = false;
+        var subDomainBlogUrl = "https://blog.csdn.net/"
+        var digg_base_url = "https://blog.csdn.net/zjiang1994/phoenix/comment";
+    </script>
+    <script type="text/javascript">
+        // Traffic Stats of the entire Web site By baidu
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?6bcd52f51e9b3dce32bec4a3997715ac";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+        // Traffic Stats of the entire Web site By baidu end
+    </script>
+    <script src="https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="https://csdnimg.cn/rabbit/exposure-click/main-1.0.6.js"></script>
+    <script src="//g.csdnimg.cn/fixed-sidebar/1.1.3/fixed-sidebar.js" type="text/javascript"></script>
+    <!-- 新版上报 -->
+    <script src="//g.csdnimg.cn/track/1.2.4/track.js" type="text/javascript"></script>
+    <!-- 新版上报end -->
+            <link rel="stylesheet" href="https://csdnimg.cn/public/sandalstrap/1.4/css/sandalstrap.min.css">
+    <style>
+        .MathJax, .MathJax_Message, .MathJax_Preview{
+            display: none
+        }
+    </style>
+</head>
+<!-- nodata 第三栏接口无数据时样式不变 -->
+<body class="nodata " > 
+    <link rel="stylesheet" href="https://csdnimg.cn/public/common/toolbar/content_toolbar_css/content_toolbar.css">
+    <script id="toolbar-tpl-scriptId" src="https://csdnimg.cn/public/common/toolbar/js/content_toolbar.js" type="text/javascript" domain="https://blog.csdn.net/"></script>
+<div id="kp_box_476" data-pid="476" data-track-view='{"mod":"kp_popu_476-848","con":",,"}' data-track-click='{"mod":"kp_popu_476-848","con":",,"}'><script src="//csdnimg.cn/public/common/indexSuperise/1.0.3/indexSuperise.js?20190103190825"></script>
+<script>
+ window.csdn.indexSuperise({
+      smallMoveImg: '//img-ads.csdn.net/2019/201903051042155786.jpg',
+      bigMoveImg: 
+'//img-ads.csdn.net/2019/201903051042367668.jpg',
+     link:'//click.hm.baidu.com/clk?409542abc24a08e1df8ab313055f1728',
+boxStyle:140,
+trackSuperId:476,
+smallMove:'notMove',  
+trackSId:848
+    });
+</script></div><link rel="stylesheet" href="https://csdnimg.cn/release/phoenix/template/css/blog_code-c3a0c33d5c.css">
+<link rel="stylesheet" href="https://csdnimg.cn/release/phoenix/vendor/pagination/paging.css">
+<script type="text/javascript">
+	// 容错处理
+	var NEWS_FEED = function(){}
+</script>
+<script type="text/javascript" src="//static.mediav.com/js/mvf_news_feed.js"></script>
+<script type="text/javascript" src="//g.csdnimg.cn/copyright/1.0.3/copyright.js"></script>
+<div style="display:none;">
+	<img src="" onerror='setTimeout(function(){if(!/(csdn.net|iteye.com|baiducontent.com|googleusercontent.com|360webcache.com|sogoucdn.com|bingj.com|baidu.com)$/.test(window.location.hostname)){window.location.href="\x68\x74\x74\x70\x73\x3a\x2f\x2f\x77\x77\x77\x2e\x63\x73\x64\x6e\x2e\x6e\x65\x74"}},3000);'>
+</div>
+<link rel="stylesheet" href="https://csdnimg.cn/release/phoenix/template/css/chart-3456820cac.css" />
+<script src="https://dup.baidustatic.com/js/ds.js"></script>
+<div class="container clearfix" id="mainBox">
+			<div class="recommend-right">
+  <ul class="recommend-fixed-box">
+    
+  </ul>
+</div>	
+    <main>
+        <div class="blog-content-box">
+	<div class="article-header-box">
+		<div class="article-header">
+			<div class="article-title-box">
+				<span class="article-type type-1 float-left">原</span>				<h1 class="title-article">scrapy爬虫框架入门实例</h1>
+			</div>
+			<div class="article-info-box">
+				<div class="article-bar-top">
+																				<span class="time">2016年10月10日 21:22:14</span>
+					<a class="follow-nickName" href="https://me.csdn.net/zjiang1994" target="_blank">Clew123</a>
+						<span class="read-count">阅读数：52364</span>
+						
+																															</div>
+				<div class="operating">
+									</div>
+			</div>
+		</div>
+	</div>
+	<article class="baidu_pl">
+		<div id="article_content" class="article_content clearfix csdn-tracking-statistics" data-pid="blog"  data-mod=popu_307  data-dsm = "post" >
+								<div class="article-copyright">
+                  					
+					版权声明：本文为博主原创文章，未经博主允许不得转载。					https://blog.csdn.net/zjiang1994/article/details/52779537				</div>
+								            <div id="content_views" class="markdown_views prism-atom-one-dark">
+							<!-- flowchart 箭头图标 勿删 -->
+							<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><path stroke-linecap="round" d="M5,0 0,2.5 5,5z" id="raphael-marker-block" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path></svg>
+							<p><strong>注意：经多人告知，慕课网的页面结构已经变了，所以说该案例实际上已经不能达到抓取目的。但是关于scrapy爬虫框架整体的使用方式和流程目前还是正确的，可以进行参考。</strong></p>
+
+<h1 id="scrapy爬虫框架入门实例">scrapy爬虫框架入门实例</h1>
+
+<p>关于如何安装scrapy框架，可以参考这篇文章 <br>
+<a href="http://blog.csdn.net/zjiang1994/article/details/52689144" rel="nofollow">scrapy安装方法</a> <br>
+初识scrapy框架，写个简单的例子帮助理解。</p>
+
+<p><strong>强调一下，这里使用的是Python3.6</strong></p>
+
+<p><img src="https://img-blog.csdn.net/20170607090735845?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemppYW5nMTk5NA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="Python" title=""></p>
+
+<p>例子的目标就是抓取慕课网的课程信息</p>
+
+<h2 id="流程分析">流程分析</h2>
+
+
+
+<h3 id="抓取内容">抓取内容</h3>
+
+<p>例子要抓取这个网页<a href="http://www.imooc.com/course/list" rel="nofollow">http://www.imooc.com/course/list</a> <br>
+要抓取的内容是全部的课程名称，课程图片，课程人数，课程简介，课程URL <br>
+这样的： <br>
+<img src="https://img-blog.csdn.net/20161010171303901" alt="这里写图片描述" title=""></p>
+
+<p>我们要抓取的是这一部分 <br>
+<img src="https://img-blog.csdn.net/20161010171317394" alt="这里写图片描述" title=""> <br>
+或者说抓取其中的每一个课程div <br>
+<img src="img.blog.csdn.net/20161010171336863" alt="这里写图片描述" title=""></p>
+
+
+
+<pre class="prettyprint"><code class=" hljs erlang">#如果response是网页资源的话，下面的代码可以帮助我们获得<span class="hljs-keyword">div</span>
+divs = response.xpath('//<span class="hljs-keyword">div</span>[@class=<span class="hljs-string">"moco-course-wrap"</span>]/a[@target=<span class="hljs-string">"_self"</span>]')</code></pre>
+
+<p>通过浏览器的调试工具我们可以看到它们的结构。 <br>
+<img src="https://img-blog.csdn.net/20161010171401418" alt="这里写图片描述" title=""></p>
+
+<p>所以如果div已经获得的话通过如下获得信息</p>
+
+
+
+<pre class="prettyprint"><code class=" hljs vala"><span class="hljs-preprocessor">#获取每个div中的课程路径</span>
+item[<span class="hljs-string">'url'</span>] = <span class="hljs-string">'http://www.imooc.com'</span> + box.xpath(<span class="hljs-string">'.//@href'</span>).extract()[<span class="hljs-number">0</span>]
+<span class="hljs-preprocessor">#获取div中的课程标题</span>
+item[<span class="hljs-string">'title'</span>] = box.xpath(<span class="hljs-string">'.//img/@alt'</span>).extract()[<span class="hljs-number">0</span>].strip()
+<span class="hljs-preprocessor">#获取div中的标题图片地址</span>
+item[<span class="hljs-string">'image_url'</span>] = box.xpath(<span class="hljs-string">'.//@src'</span>).extract()[<span class="hljs-number">0</span>]
+<span class="hljs-preprocessor">#获取div中的学生人数</span>
+item[<span class="hljs-string">'student'</span>] = box.xpath(<span class="hljs-string">'.//span/text()'</span>).extract()[<span class="hljs-number">0</span>].strip()[:-<span class="hljs-number">3</span>]
+<span class="hljs-preprocessor">#获取div中的课程简介</span>
+item[<span class="hljs-string">'introduction'</span>] = box.xpath(<span class="hljs-string">'.//p/text()'</span>).extract()[<span class="hljs-number">0</span>].strip()</code></pre>
+
+<p>同时，为了抓取全部课程我们还要抓取跟进URL～ <br>
+这里就不在演示了。</p>
+
+<hr>
+
+
+
+<h3 id="工作流程">工作流程</h3>
+
+<p>Scrapy框架抓取的基本流程是这样(随便画了一下，不要纠结) <br>
+<img src="https://img-blog.csdn.net/20161010171426872" alt="这里写图片描述" title=""> <br>
+当然了，还有一些中间件等等，这里是入门例子，所以不涉及。</p>
+
+<hr>
+
+
+
+<h2 id="工程建立">工程建立</h2>
+
+<p>在控制台模式下进入你要建立工程的文件夹执行如下命令创建工程</p>
+
+
+
+<pre class="prettyprint"><code class=" hljs ">scrapy startproject scrapytest</code></pre>
+
+<p>这里的scrapytest是工程名框架会自动在当前目录下创建一个同名的文件夹，工程文件就在里边。</p>
+
+<hr>
+
+
+
+<h2 id="目录分析">目录分析</h2>
+
+<p>目录结构如下图。</p>
+
+<p><img src="https://img-blog.csdn.net/20161010171447707" alt="这里写图片描述" title=""></p>
+
+<pre><code>scrapy.cfg: 项目的配置文件
+scrapytest/: 该项目的python模块。之后您将在此加入代码。
+scrapytest/items.py: 项目中的item文件.
+scrapytest/pipelines.py: 项目中的pipelines文件.
+scrapytest/settings.py: 项目的设置文件.
+scrapytest/spiders/: 放置spider代码的目录.
+</code></pre>
+
+<hr>
+
+
+
+<h2 id="创建一个爬虫">创建一个爬虫</h2>
+
+<p>下面按步骤讲解如何编写一个简单的爬虫。</p>
+
+
+
+<h3 id="创建爬虫文件">创建爬虫文件</h3>
+
+<p>我们要编写爬虫，首先是创建一个Spider</p>
+
+<p>我们在<code>scrapytest/spiders/</code>目录下创建一个文件<code>MySpider.py</code></p>
+
+<p>文件包含一个MySpider类，它必须继承scrapy.Spider类。</p>
+
+<p>同时它必须定义一下三个属性：</p>
+
+<p>-name: 用于区别Spider。 该名字必须是唯一的，您不可以为不同的Spider设定相同的名字。 <br>
+-start_urls: 包含了Spider在启动时进行爬取的url列表。 因此，第一个被获取到的页面将是其中之一。 后续的URL则从初始的URL获取到的数据中提取。 <br>
+-parse() 是spider的一个方法。 被调用时，每个初始URL完成下载后生成的 Response 对象将会作为唯一的参数传递给该函数。 该方法负责解析返回的数据(response data)，提取数据(生成item)以及生成需要进一步处理的URL的 Request 对象。</p>
+
+<p>创建完成后MySpider.py的代码如下</p>
+
+
+
+<pre class="prettyprint"><code class=" hljs python"><span class="hljs-comment">#引入文件</span>
+<span class="hljs-keyword">import</span> scrapy
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MySpider</span><span class="hljs-params">(scrapy.Spider)</span>:</span>
+    <span class="hljs-comment">#用于区别Spider</span>
+    name = <span class="hljs-string">"MySpider"</span>
+    <span class="hljs-comment">#允许访问的域</span>
+    allowed_domains = []
+    <span class="hljs-comment">#爬取的地址</span>
+    start_urls = []
+    <span class="hljs-comment">#爬取方法</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">parse</span><span class="hljs-params">(self, response)</span>:</span>
+        <span class="hljs-keyword">pass</span></code></pre>
+
+<hr>
+
+
+
+<h3 id="定义爬取项目">定义爬取项目</h3>
+
+<p>创建完了Spider文件，先不急着编写爬取代码 <br>
+我们先定义一个容器保存要爬取的数据。</p>
+
+<p>这样我们就用到了Item <br>
+为了定义常用的输出数据，Scrapy提供了Item类。Item对象是种简单的容器，保存了爬取到得数据。 其提供了 类似于词典(dictionary-like)的API以及用于声明可用字段的简单语法。</p>
+
+<p>我们在工程目录下可以看到一个items文件，我们可以更改这个文件或者创建一个新的文件来定义我们的item。</p>
+
+<p>这里，我们在同一层创建一个新的item文件<code>CourseItems.py</code></p>
+
+<p>CourseItems.py的代码如下</p>
+
+
+
+<pre class="prettyprint"><code class=" hljs avrasm"><span class="hljs-preprocessor">#引入文件</span>
+import scrapy
+
+class CourseItem(scrapy<span class="hljs-preprocessor">.Item</span>):
+    <span class="hljs-preprocessor">#课程标题</span>
+    title = scrapy<span class="hljs-preprocessor">.Field</span>()
+    <span class="hljs-preprocessor">#课程url</span>
+    url = scrapy<span class="hljs-preprocessor">.Field</span>()
+    <span class="hljs-preprocessor">#课程标题图片</span>
+    image_url = scrapy<span class="hljs-preprocessor">.Field</span>()
+    <span class="hljs-preprocessor">#课程描述</span>
+    introduction = scrapy<span class="hljs-preprocessor">.Field</span>()
+    <span class="hljs-preprocessor">#学习人数</span>
+    student = scrapy<span class="hljs-preprocessor">.Field</span>()</code></pre>
+
+<p>根据如上的代码，我们创建了一个名为courseItem的容器，用来保存、抓取的信息， <br>
+title-&gt;课程标题, url-&gt;课程url, image_url-&gt;课程标题图片, introduction-&gt;课程描述, student-&gt;学习人数</p>
+
+<p>在创建完item文件后我们可以通过类似于词典(dictionary-like)的API以及用于声明可用字段的简单语法。</p>
+
+<p>常用方法如下</p>
+
+
+
+<pre class="prettyprint"><code class=" hljs vala"><span class="hljs-preprocessor">#定义一个item</span>
+course = CourseItem()
+<span class="hljs-preprocessor">#赋值</span>
+course[<span class="hljs-string">'title'</span>] = <span class="hljs-string">"语文"</span>
+<span class="hljs-preprocessor">#取值</span>
+course[<span class="hljs-string">'title'</span>]
+course.<span class="hljs-keyword">get</span>(<span class="hljs-string">'title'</span>)
+<span class="hljs-preprocessor">#获取全部键</span>
+course.keys()
+<span class="hljs-preprocessor">#获取全部值</span>
+course.items()</code></pre>
+
+<hr>
+
+
+
+<h2 id="编写spider代码">编写Spider代码</h2>
+
+<p>定义了item后我们就能进行爬取部分的工作了。</p>
+
+<p>为了简单清晰，我们先抓取一个页面中的信息。</p>
+
+<p>首先我们编写爬取代码</p>
+
+<p>我们在上文说过，爬取的部分在MySpider类的parse()方法中进行。 <br>
+parse()方法负责处理response并返回处理的数据以及(/或)跟进的URL。 <br>
+该方法及其他的Request回调函数必须返回一个包含 Request 及(或) Item 的可迭代的对象。</p>
+
+<p>我们在之前创建的MySpider.py中编写如下代码。 <br>
+注意和上边MySpider.py的区别</p>
+
+
+
+<pre class="prettyprint"><code class=" hljs python"><span class="hljs-keyword">import</span> scrapy
+<span class="hljs-comment">#引入容器</span>
+<span class="hljs-keyword">from</span> scrapytest.CourseItems <span class="hljs-keyword">import</span> CourseItem
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MySpider</span><span class="hljs-params">(scrapy.Spider)</span>:</span>
+    <span class="hljs-comment">#设置name</span>
+    name = <span class="hljs-string">"MySpider"</span>
+    <span class="hljs-comment">#设定域名</span>
+    allowed_domains = [<span class="hljs-string">"imooc.com"</span>]
+    <span class="hljs-comment">#填写爬取地址</span>
+    start_urls = [<span class="hljs-string">"http://www.imooc.com/course/list"</span>]
+    <span class="hljs-comment">#编写爬取方法</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">parse</span><span class="hljs-params">(self, response)</span>:</span>
+        <span class="hljs-comment">#实例一个容器保存爬取的信息</span>
+        item = CourseItem()
+        <span class="hljs-comment">#这部分是爬取部分，使用xpath的方式选择信息，具体方法根据网页结构而定</span>
+        <span class="hljs-comment">#先获取每个课程的div</span>
+        <span class="hljs-keyword">for</span> box <span class="hljs-keyword">in</span> response.xpath(<span class="hljs-string">'//div[@class="moco-course-wrap"]/a[@target="_self"]'</span>):
+            <span class="hljs-comment">#获取每个div中的课程路径</span>
+            item[<span class="hljs-string">'url'</span>] = <span class="hljs-string">'http://www.imooc.com'</span> + box.xpath(<span class="hljs-string">'.//@href'</span>).extract()[<span class="hljs-number">0</span>]
+            <span class="hljs-comment">#获取div中的课程标题</span>
+            item[<span class="hljs-string">'title'</span>] = box.xpath(<span class="hljs-string">'.//img/@alt'</span>).extract()[<span class="hljs-number">0</span>].strip()
+            <span class="hljs-comment">#获取div中的标题图片地址</span>
+            item[<span class="hljs-string">'image_url'</span>] = box.xpath(<span class="hljs-string">'.//@src'</span>).extract()[<span class="hljs-number">0</span>]
+            <span class="hljs-comment">#获取div中的学生人数</span>
+            item[<span class="hljs-string">'student'</span>] = box.xpath(<span class="hljs-string">'.//span/text()'</span>).extract()[<span class="hljs-number">0</span>].strip()[:-<span class="hljs-number">3</span>]
+            <span class="hljs-comment">#获取div中的课程简介</span>
+            item[<span class="hljs-string">'introduction'</span>] = box.xpath(<span class="hljs-string">'.//p/text()'</span>).extract()[<span class="hljs-number">0</span>].strip()
+            <span class="hljs-comment">#返回信息</span>
+            <span class="hljs-keyword">yield</span> item</code></pre>
+
+<p>注：这里用到了xpath方式来获取页面信息，这里不做过多介绍，可以参考网上的xpath教程来自己学习。</p>
+
+<p>在parse()方法中response参数返回一个下载好的网页信息，我们然后通过xpath来寻找我们需要的信息。 <br>
+在scrapy框架中，可以使用多种选择器来寻找信息，这里使用的是xpath，同时我们也可以使用BeautifulSoup，lxml等扩展来选择，而且框架本身还提供了一套自己的机制来帮助用户获取信息，就是Selectors。 <br>
+因为本文只是为了入门所以不做过多解释。</p>
+
+<p>在执行完以上步骤之后，我们可以运行一下爬虫，看看是否出错。</p>
+
+<p>在命令行下进入工程文件夹，然后运行</p>
+
+
+
+<pre class="prettyprint"><code class=" hljs ">scrapy crawl MySpider</code></pre>
+
+<p>如果操作正确会显示如下信息。</p>
+
+<p><img src="https://img-blog.csdn.net/20161010171521239" alt="这里写图片描述" title=""></p>
+
+<p>上面信息表示，我们已经获取了信息，接下来我们开始进行信息的储存。</p>
+
+<hr>
+
+
+
+<h3 id="使用pipeline处理数据">使用Pipeline处理数据</h3>
+
+<p>当我们成功获取信息后，要进行信息的验证、储存等工作，这里以储存为例。 <br>
+当Item在Spider中被收集之后，它将会被传递到Pipeline，一些组件会按照一定的顺序执行对Item的处理。 <br>
+Pipeline经常进行一下一些操作： <br>
+    清理HTML数据 <br>
+    验证爬取的数据(检查item包含某些字段) <br>
+    查重(并丢弃) <br>
+    将爬取结果保存到数据库中</p>
+
+<p>这里只进行简单的将数据储存在json文件的操作。</p>
+
+<p>首先在<code>scrapytest/</code>目录下建立一个文件MyPipelines.py</p>
+
+<p>MyPipelines.py代码如下</p>
+
+
+
+<pre class="prettyprint"><code class=" hljs python"><span class="hljs-comment">#引入文件</span>
+<span class="hljs-keyword">from</span> scrapy.exceptions <span class="hljs-keyword">import</span> DropItem
+<span class="hljs-keyword">import</span> json
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyPipeline</span><span class="hljs-params">(object)</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-comment">#打开文件</span>
+        self.file = open(<span class="hljs-string">'data.json'</span>, <span class="hljs-string">'w'</span>, encoding=<span class="hljs-string">'utf-8'</span>)
+    <span class="hljs-comment">#该方法用于处理数据</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">process_item</span><span class="hljs-params">(self, item, spider)</span>:</span>
+        <span class="hljs-comment">#读取item中的数据</span>
+        line = json.dumps(dict(item), ensure_ascii=<span class="hljs-keyword">False</span>) + <span class="hljs-string">"\n"</span>
+        <span class="hljs-comment">#写入文件</span>
+        self.file.write(line)
+        <span class="hljs-comment">#返回item</span>
+        <span class="hljs-keyword">return</span> item
+    <span class="hljs-comment">#该方法在spider被开启时被调用。</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">open_spider</span><span class="hljs-params">(self, spider)</span>:</span>
+        <span class="hljs-keyword">pass</span>
+    <span class="hljs-comment">#该方法在spider被关闭时被调用。</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">close_spider</span><span class="hljs-params">(self, spider)</span>:</span>
+        <span class="hljs-keyword">pass</span></code></pre>
+
+<p>要使用Pipeline，首先要注册Pipeline</p>
+
+<p>找到settings.py文件,这个文件时爬虫的配置文件</p>
+
+<p>在其中添加</p>
+
+
+
+<pre class="prettyprint"><code class=" hljs bash">ITEM_PIPELINES = {
+    <span class="hljs-string">'scrapytest.MyPipelines.MyPipeline'</span>: <span class="hljs-number">1</span>,
+}</code></pre>
+
+<p>上面的代码用于注册Pipeline，其中<code>scrapytest.MyPipelines.MyPipeline</code>为你要注册的类，右侧的’1’为该Pipeline的优先级，范围1～1000，越小越先执行。</p>
+
+<p>进行完以上操作，我们的一个最基本的爬取操作就完成了</p>
+
+<p>这时我们再运行</p>
+
+
+
+<pre class="prettyprint"><code class=" hljs ">scrapy crawl MySpider</code></pre>
+
+<p>就可以在项目根目录下发现data.json文件，里面存储着爬取的课程信息。</p>
+
+<p>如下图： <br>
+<img src="https://img-blog.csdn.net/20161010171550764" alt="这里写图片描述" title=""></p>
+
+<p>这样一个简单的爬虫就完成了。</p>
+
+<hr>
+
+
+
+<h2 id="扩展完善">扩展完善</h2>
+
+<p>上面的代码只进行了比较简单的爬取，并没有完成爬取慕课网全部课程的目标。 <br>
+下面进行一些简单的扩展完成我们的目标。</p>
+
+
+
+<h3 id="url跟进">url跟进</h3>
+
+<p>在上面我们介绍了如何进行简单的单页面爬取，但是我们可以发现慕课网的课程是分布在去多个页面的，所以为了完整的爬取信息课程信息，我们需要进行url跟进。</p>
+
+<p>为了完成这个目标需要对<code>MySpider.py</code>文件进行如下更改</p>
+
+
+
+<pre class="prettyprint"><code class=" hljs python"><span class="hljs-keyword">import</span> scrapy
+<span class="hljs-comment">#引入容器</span>
+<span class="hljs-keyword">from</span> scrapytest.CourseItems <span class="hljs-keyword">import</span> CourseItem
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MySpider</span><span class="hljs-params">(scrapy.Spider)</span>:</span>
+    <span class="hljs-comment">#设置name</span>
+    name = <span class="hljs-string">"MySpider"</span>
+    <span class="hljs-comment">#设定域名</span>
+    allowed_domains = [<span class="hljs-string">"imooc.com"</span>]
+    <span class="hljs-comment">#填写爬取地址</span>
+    start_urls = [<span class="hljs-string">"http://www.imooc.com/course/list"</span>]
+    <span class="hljs-comment">#编写爬取方法</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">parse</span><span class="hljs-params">(self, response)</span>:</span>
+        <span class="hljs-comment">#实例一个容器保存爬取的信息</span>
+        item = CourseItem()
+        <span class="hljs-comment">#这部分是爬取部分，使用xpath的方式选择信息，具体方法根据网页结构而定</span>
+        <span class="hljs-comment">#先获取每个课程的div</span>
+        <span class="hljs-keyword">for</span> box <span class="hljs-keyword">in</span> response.xpath(<span class="hljs-string">'//div[@class="moco-course-wrap"]/a[@target="_self"]'</span>):
+            <span class="hljs-comment">#获取每个div中的课程路径</span>
+            item[<span class="hljs-string">'url'</span>] = <span class="hljs-string">'http://www.imooc.com'</span> + box.xpath(<span class="hljs-string">'.//@href'</span>).extract()[<span class="hljs-number">0</span>]
+            <span class="hljs-comment">#获取div中的课程标题</span>
+            item[<span class="hljs-string">'title'</span>] = box.xpath(<span class="hljs-string">'.//img/@alt'</span>).extract()[<span class="hljs-number">0</span>].strip()
+            <span class="hljs-comment">#获取div中的标题图片地址</span>
+            item[<span class="hljs-string">'image_url'</span>] = box.xpath(<span class="hljs-string">'.//@src'</span>).extract()[<span class="hljs-number">0</span>]
+            <span class="hljs-comment">#获取div中的学生人数</span>
+            item[<span class="hljs-string">'student'</span>] = box.xpath(<span class="hljs-string">'.//span/text()'</span>).extract()[<span class="hljs-number">0</span>].strip()[:-<span class="hljs-number">3</span>]
+            <span class="hljs-comment">#获取div中的课程简介</span>
+            item[<span class="hljs-string">'introduction'</span>] = box.xpath(<span class="hljs-string">'.//p/text()'</span>).extract()[<span class="hljs-number">0</span>].strip()
+            <span class="hljs-comment">#返回信息</span>
+            <span class="hljs-keyword">yield</span> item
+        <span class="hljs-comment">#url跟进开始</span>
+        <span class="hljs-comment">#获取下一页的url信息</span>
+        url = response.xpath(<span class="hljs-string">"//a[contains(text(),'下一页')]/@href"</span>).extract()
+        <span class="hljs-keyword">if</span> url :
+            <span class="hljs-comment">#将信息组合成下一页的url</span>
+            page = <span class="hljs-string">'http://www.imooc.com'</span> + url[<span class="hljs-number">0</span>]
+            <span class="hljs-comment">#返回url</span>
+            <span class="hljs-keyword">yield</span> scrapy.Request(page, callback=self.parse)
+        <span class="hljs-comment">#url跟进结束</span></code></pre>
+
+<p>修改成功后就可以自动进行url跟进了。</p>
+
+<hr>
+
+
+
+<h3 id="下载图片">下载图片</h3>
+
+<p>在上文我们爬取了慕课网全部的课程信息，但是每个课程的标题图片我们只获得了url并没有下载下了，这里我们进行图片下载的编写。</p>
+
+<p>首先我们在<code>CourseItems.py</code>文件中添加如下属性</p>
+
+
+
+<pre class="prettyprint"><code class=" hljs vala"><span class="hljs-preprocessor">#图片地址</span>
+image_path = scrapy.Field()</code></pre>
+
+<p>因为我们要下载图片，所以需要用这个属性用来保存下载地址。</p>
+
+<p>接下来我们需要创建一个Pipeline用来下载图片。</p>
+
+<p>这里我们创建一个<code>ImgPipelines.py</code></p>
+
+<p>代码如下:</p>
+
+
+
+<pre class="prettyprint"><code class=" hljs python"><span class="hljs-keyword">import</span> scrapy
+<span class="hljs-keyword">from</span> scrapy.contrib.pipeline.images <span class="hljs-keyword">import</span> ImagesPipeline
+<span class="hljs-keyword">from</span> scrapy.exceptions <span class="hljs-keyword">import</span> DropItem
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ImgPipeline</span><span class="hljs-params">(ImagesPipeline)</span>:</span>
+    <span class="hljs-comment">#通过抓取的图片url获取一个Request用于下载</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_media_requests</span><span class="hljs-params">(self, item, info)</span>:</span>
+        <span class="hljs-comment">#返回Request根据图片图片url下载</span>
+        <span class="hljs-keyword">yield</span> scrapy.Request(item[<span class="hljs-string">'image_url'</span>])
+    <span class="hljs-comment">#当下载请求完成后执行该方法</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">item_completed</span><span class="hljs-params">(self, results, item, info)</span>:</span>
+        <span class="hljs-comment">#获取下载地址</span>
+        image_path = [x[<span class="hljs-string">'path'</span>] <span class="hljs-keyword">for</span> ok, x <span class="hljs-keyword">in</span> results <span class="hljs-keyword">if</span> ok]
+        <span class="hljs-comment">#判断是否成功</span>
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> image_path:
+            <span class="hljs-keyword">raise</span> DropItem(<span class="hljs-string">"Item contains no images"</span>)
+        <span class="hljs-comment">#将地址存入item</span>
+        item[<span class="hljs-string">'image_path'</span>] = image_path
+        <span class="hljs-keyword">return</span> item</code></pre>
+
+<p>这里我们使用的是Scrapy提供的ImagesPipeline，这个pipeline专门进行图片的下载， <br>
+这里、主要用到两个方法：get_media_requests() 和item_completed()</p>
+
+<p>get_media_requests(item, info)方法是通过抓取的图片url来返回一个Request，这个Request将对图片进行下载。 <br>
+在下载请求完成后(下载成功或失败)就会调用item_completed()方法。</p>
+
+<p>item_completed(results, items, info) <br>
+方法在下载请求完成后执行. <br>
+参数results包含三个项目</p>
+
+<pre><code>url-&gt;图片的url，
+path-&gt;下载后保存地址，
+checksum-&gt;图片内容的 MD5 hash
+</code></pre>
+
+<p>该方法需要返回item供后续操作。</p>
+
+<p>编写完ImgPipelines后照例需要注册一下</p>
+
+
+
+<pre class="prettyprint"><code class=" hljs bash">ITEM_PIPELINES = {
+    <span class="hljs-string">'scrapytest.MyPipelines.MyPipeline'</span>: <span class="hljs-number">100</span>,
+    <span class="hljs-string">'scrapytest.ImgPipelines.ImgPipeline'</span>: <span class="hljs-number">1</span>,
+}</code></pre>
+
+<p>注意这里的顺序，因为我要先下载图片再获得图片的路径，所以应该先处理ImgPipeline再处理MyPipeline,所以说ImgPipeline的数字小一些。</p>
+
+<p>同时，因为是下载图片这里需要注册一下保存地址，还是在<code>settings.py</code>文件</p>
+
+
+
+<pre class="prettyprint"><code class=" hljs tex">IMAGES_STORE = 'D:<span class="hljs-command">\\</span>img<span class="hljs-command">\\</span>'</code></pre>
+
+<p>IMAGES_STORE规定了保存地址，地址自己随意。</p>
+
+<p>这样在运行爬虫就会下载图片了，就像这样 <br>
+<img src="https://img-blog.csdn.net/20161010171639146" alt="这里写图片描述" title=""></p>
+
+<p>同时注意了，因为要进行下载任务，所以说电脑不好的同学很有可能内存溢出，所以不推荐在pipeline中执行下载等任务，可以在后期处理。如果非要处理的话可以更改<code>CONCURRENT_ITEMS</code>参数减少并发处理item的数量来降低系统开销。</p>
+
+<p>CONCURRENT_ITEMS属性默认为100，就是同时处理100个item可以适当降低，实在不行就是1</p>
+
+<hr>
+
+
+
+<h2 id="总结">总结</h2>
+
+<p>把多余的文件删除后的目录结构 <br>
+<img src="https://img-blog.csdn.net/20161010172034912" alt="这里写图片描述" title=""></p>
+
+<p>上面的处理结束后我们就成功的抓取了慕课网的全部课程信息了。 <br>
+<img src="https://img-blog.csdn.net/20161010171723381" alt="这里写图片描述" title=""> <br>
+以上就是我的Scrapy入门小例子了。如果有看到的希望指出不足。</p>
+
+<p>附上我的代码：<a href="http://download.csdn.net/detail/zjiang1994/9650057" rel="nofollow">scrapy抓取实例</a></p>            </div>
+						<link href="https://csdnimg.cn/release/phoenix/mdeditor/markdown_views-258a4616f7.css" rel="stylesheet">
+                </div>
+	</article>
+</div>
+  <div class="hide-article-box hide-article-pos text-center">
+    <div class="border"></div>
+        <a class="btn article-footer-btn" id="btn-readmore" data-track-view='{"mod":"popu_376","con":",https://blog.csdn.net/zjiang1994/article/details/52779537,"}' data-track-click='{"mod":"popu_376","con":",https://blog.csdn.net/zjiang1994/article/details/52779537,"}'>阅读更多</a>
+        <a class="btn article-footer-btn article-footer-bookmark-btn" >
+      <svg class="icon no-active hover-hide" aria-hidden="true">
+        <use xlink:href="#csdnc-bookmark"></use>
+      </svg>
+      <span>收藏</span>
+    </a>
+    <div class="btn article-footer-btn  bds_weixin article-footer-share-btn" data-cmd="weixin" title="分享">
+      <svg class="icon no-active hover-hide" aria-hidden="true">
+        <use xlink:href="#csdnc-share"></use>
+      </svg>
+      <span>分享</span>
+      <div class="bdsharebuttonbox">
+        <a href="#"class="bds_weixin clear-share-style-article-footer" data-cmd="weixin" title="分享"></a>
+      </div>
+    </div>
+    
+  </div>
+  <script>
+  (function(){
+    function collection(){
+      if (currentUserName) {
+        var markObj = {};
+            markObj.imgUrl ='https://csdnimg.cn/release/phoenix/static_blog/images/appqr.png';
+        var markPrompt = (new window.csdn.publicPrompt).init(markObj);
+        var maeked = '您已经收藏过';
+        if (!$(this).hasClass("liked")) {
+          $.ajax({
+            url: 'https://my.csdn.net/my/favorite/do_add/2',
+            dataType: 'json',
+            type: 'POST',
+            xhrFields: {
+              withCredentials: true
+            },
+            data: {
+              title: articleTit,
+              url: 'https://blog.csdn.net/zjiang1994/article/details/52779537',
+              share: 1,
+              map_name: ''
+            },
+            success: function(data) {
+              
+              if (data.succ == 1) {
+                $('.btn-bookmark').addClass("liked");
+                $('.article-footer-bookmark-btn').addClass("liked").children('span').text('已收藏');
+                markPrompt.show({})
+                // alert('收藏成功,可以在个人中心查看我的收藏');
+              } else {
+                if (data.msg === "您已经收藏过") {
+                  $('.btn-bookmark').addClass("liked");
+                  $('.article-footer-bookmark-btn').addClass("liked").children('span').text('已收藏');
+                  markPrompt.show({
+                    titleStr: maeked
+                  })
+                }else{
+                  alert(data.msg);
+                  
+                }
+              }
+            }
+          });
+        } else {
+          markPrompt.show({
+            titleStr: maeked
+          })
+        }
+      } else {
+        window.csdn.loginBox.show();
+      }
+    }
+    function permissionCheck(dom){
+      var returnData = false;
+      switch (true) {
+        case currentUserPermission && userPermission:
+          clearReadMoreBtn(dom)
+          returnData = true;
+          break;
+        case userPermission:
+          dom.text('VIP阅读');
+          returnData = false;
+          break;
+        default:
+          
+      }
+      return returnData;
+    }
+    window.csdn = window.csdn ? window.csdn : {};
+    window.csdn.articleCollection = collection;
+    function clearReadMoreBtn(dom) {
+      if(userPermission && !(dom instanceof jQuery)) {
+        window.open('https://mall.csdn.net/vip_code?utm_source=brv')
+        return false;
+      }
+      dom = dom instanceof jQuery ? dom : $(this);
+      $("div.article_content").removeAttr("style");
+      dom.parent().remove();
+    }
+    function setArticleH(btnReadmore,posi){
+      var winH = $(window).height();
+      var articleBox = $("div.article_content");
+      var artH = articleBox.height();
+      if(artH > winH*posi){
+        articleBox.css({
+          'height':winH*posi+'px',
+          'overflow':'hidden'
+        })
+        btnReadmore.click(clearReadMoreBtn)
+      }else{
+        btnReadmore.parent().remove()
+      }
+    }
+    var btnReadmore = $("#btn-readmore");
+    $('.article-footer-bookmark-btn').click(window.csdn.articleCollection)
+    if(btnReadmore.length>0){
+      if (permissionCheck(btnReadmore)) {
+        return false;
+      }
+      if(currentUserName){
+        setArticleH(btnReadmore,3);
+      }else{
+        setArticleH(btnReadmore,1.2);
+      }
+    }else{
+      $('.hide-article-box').addClass('hide-article-style');
+    }
+  })()
+</script>
+<script>
+		$(".MathJax").remove();
+		if($('div.markdown_views pre.prettyprint code.hljs').length > 0 ){
+				$('div.markdown_views')[0].className = 'markdown_views';
+		}
+</script>
+        <div id="dmp_ad_58"><div id="kp_box_58" data-pid="58" data-track-view='{"mod":"kp_popu_58-402","con":",,"}' data-track-click='{"mod":"kp_popu_58-402","con":",,"}'><div style="width:100%;background:#fff;border:3px solid #fff;">
+<script type="text/javascript" src="//static.mediav.com/js/mvf_news_feed.js"></script>
+<div id="three_ad1" class="mediav_ad" ></div>
+<script>
+                                               NEWS_FEED({
+                w: 900,
+                h : 100,
+                showid : 'ztvJV8',
+                placeholderId: "three_ad1",
+                inject : 'define',
+                define : {
+                    imagePosition : 'left',
+                    imageBorderRadius : 0,
+                    imageWidth: 90,
+                    imageHeight: 68,
+                    imageFill : 'clip',
+                    displayImage : true,
+                    displayTitle : true,
+                    titleFontSize: 18,
+                    titleFontColor: '#000',
+                    titleFontFamily : 'Lato,-apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif',
+                    titleFontWeight: 'bold',
+                    titlePaddingTop : 0,
+                    titlePaddingRight : 0,
+                    titlePaddingBottom : 5,
+                    titlePaddingLeft : 16,
+                    displayDesc : true,
+                    descFontSize: 14,
+                    descFontColor: '#8e959a',
+                    descFontFamily : 'Microsoft YaHei',
+                    paddingTop : 20,
+                    paddingRight : 0,
+                    paddingBottom : 0,
+                    paddingLeft : 20,
+                    backgroundColor: '#fff',
+                    hoverColor: '#000'
+                      }
+                  })
+                                        </script>
+</div></div></div>        <a id="commentBox"></a>
+<div class="comment-box">
+	
+	<div class="comment-edit-box d-flex">
+		<a id="commentsedit"></a>
+		<div class="user-img">
+			<a href="javascript:void(0);" target="_blank">
+				<img class="show_loginbox" src="//g.csdnimg.cn/static/user-img/anonymous-User-img.png">
+			</a>
+		</div>
+		<form id="commentform">
+			<input type="hidden" id="comment_replyId">
+			<textarea class="comment-content" name="comment_content" id="comment_content" placeholder="想对作者说点什么"></textarea>
+			<div class="opt-box"> <!-- d-flex -->
+				<div id="ubbtools" class="add_code">
+					<a href="#insertcode" code="code" target="_self"><i class="icon iconfont icon-daima"></i></a>
+				</div>
+				<input type="hidden" id="comment_replyId" name="comment_replyId">
+				<input type="hidden" id="article_id" name="article_id" value="52779537">
+				<input type="hidden" id="comment_userId" name="comment_userId" value="">
+				<input type="hidden" id="commentId" name="commentId" value="">
+				<div style="display: none;" class="csdn-tracking-statistics tracking-click" data-mod="popu_384"><a href="#" target="_blank" class="comment_area_btn">发表评论</a></div>
+				<div class="dropdown" id="myDrap">
+					<a class="dropdown-face d-flex align-items-center" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					<div class="txt-selected text-truncate">添加代码片</div>
+					<svg class="icon d-block" aria-hidden="true">
+						<use xlink:href="#csdnc-triangledown"></use>
+					</svg>
+					</a>
+					<ul class="dropdown-menu" id="commentCode" aria-labelledby="drop4">
+						<li><a data-code="html">HTML/XML</a></li>
+						<li><a data-code="objc">objective-c</a></li>
+						<li><a data-code="ruby">Ruby</a></li>
+						<li><a data-code="php">PHP</a></li>
+						<li><a data-code="csharp">C</a></li>
+						<li><a data-code="cpp">C++</a></li>
+						<li><a data-code="javascript">JavaScript</a></li>
+						<li><a data-code="python">Python</a></li>
+						<li><a data-code="java">Java</a></li>
+						<li><a data-code="css">CSS</a></li>
+						<li><a data-code="sql">SQL</a></li>
+						<li><a data-code="plain">其它</a></li>
+					</ul>
+				</div>  
+				<div class="right-box">
+					<span id="tip_comment" class="tip">还能输入<em>1000</em>个字符</span>
+					<input type="submit" class="btn btn-sm btn-red btn-comment" value="发表评论">
+				</div>
+			</div>
+		</form>
+	</div>
+
+		<div class="comment-list-container">
+		<a id="comments"></a>
+		<div class="comment-list-box">
+		</div>
+		<div id="commentPage" class="pagination-box d-none"></div>
+		<div class="opt-box text-center">
+			<button class="btn btn-sm btn-link-blue" id="btnMoreComment"></button>
+		</div>
+	</div>
+</div>
+        <div class="recommend-box">
+            		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/u012017783/article/details/75655656,BlogCommendFromThirdService_0"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/u012017783/article/details/75655656" target="_blank" title="常见python爬虫框架">
+				<h4 class="text-truncate oneline">
+						常见python<em>爬虫框架</em>				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">07-21</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							1万+</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/u012017783/article/details/75655656" target="_blank" title="常见python爬虫框架">
+							<span class="desc oneline">一、python爬虫框架  一些爬虫项目的半成品二、常见python爬虫框架 (1)Scrapy:很强大的爬虫框架，可以满足简单的页面爬取（比如可以明确获知urlpattern的情况）。用这个框架可以...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/u012017783">来自：	<span class="blog_title"> ZCC的专栏</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/qq_31573519/article/details/71107162,BlogCommendFromThirdService_1"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/qq_31573519/article/details/71107162" target="_blank" title="Python3+Scrapy实现网页爬虫">
+				<h4 class="text-truncate oneline">
+						Python3+<em>Scrapy</em>实现网页爬虫				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">05-03</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							3万+</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/qq_31573519/article/details/71107162" target="_blank" title="Python3+Scrapy实现网页爬虫">
+							<span class="desc oneline">网页爬虫设计项目驱动，需要从网站上爬取文章，并上传至服务器，实现模拟用户发帖。框架采用Python3，配合爬虫框架Scrapy实现，目前只能抓取静态页，JS+Ajax动态加载的网页见下一篇博客GitH...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/qq_31573519">来自：	<span class="blog_title"> 止鱼</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/qq_42156420/article/details/80746774,BlogCommendFromThirdService_2"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/qq_42156420/article/details/80746774" target="_blank" title="这是我见过最屌的Scrapy框架入门教程！相当于是教科书版的教程！">
+				<h4 class="text-truncate oneline">
+						这是我见过最屌的<em>Scrapy</em>框架<em>入门</em>教程！相当于是教科书版的教程！				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">06-20</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							1万+</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/qq_42156420/article/details/80746774" target="_blank" title="这是我见过最屌的Scrapy框架入门教程！相当于是教科书版的教程！">
+							<span class="desc oneline">Scrapy运行流程大概如下：引擎从调度器中取出一个链接(URL)用于接下来的抓取引擎把URL封装成一个请求(Request)传给下载器下载器把资源下载下来，并封装成应答包(Response)爬虫解析...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/qq_42156420">来自：	<span class="blog_title"> Python程序员的博客</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    <div class="recommend-item-box recommend-ad-box"><div id="kp_box_59" data-pid="59" data-track-view='{"mod":"kp_popu_59-78","con":",,"}' data-track-click='{"mod":"kp_popu_59-78","con":",,"}'><script type="text/javascript" src="//rabc1.iteye.com/production/res/rxjg.js?pkcgstj=jm"></script></div></div>
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/liukuan73/article/details/80459435,BlogCommendFromThirdService_3"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/liukuan73/article/details/80459435" target="_blank" title="Scrapy框架的使用之Scrapy通用爬虫">
+				<h4 class="text-truncate oneline">
+						<em>Scrapy</em>框架的使用之<em>Scrapy</em>通用爬虫				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">05-26</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							5045</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/liukuan73/article/details/80459435" target="_blank" title="Scrapy框架的使用之Scrapy通用爬虫">
+							<span class="desc oneline">转载自：https://juejin.im/post/5b026d53518825426b277dd5通过Scrapy，我们可以轻松地完成一个站点爬虫的编写。但如果抓取的站点量非常大，比如爬取各大媒体...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/liukuan73">来自：	<span class="blog_title"> liukuan73的专栏</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/qq_33472765/article/details/80918712,BlogCommendFromThirdService_4"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/qq_33472765/article/details/80918712" target="_blank" title="Python爬虫scrapy框架的源代码分析">
+				<h4 class="text-truncate oneline">
+						Python爬虫<em>scrapy</em>框架的源代码分析				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">07-07</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							1907</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/qq_33472765/article/details/80918712" target="_blank" title="Python爬虫scrapy框架的源代码分析">
+							<span class="desc oneline">创建项目与配置环境后：上图主要是关于各个组件的作用！下面是部分组件的详情：项目名.py(eg:baidu.py)#-*-coding:utf-8-*-importscrapy#scrapy:是一个基于...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/qq_33472765">来自：	<span class="blog_title"> 家有代码初写成 的博客</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/ACanswer/article/details/82952327,BlogCommendFromBaidu_5"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/ACanswer/article/details/82952327" target="_blank" title="scrapy爬虫框架简单实例">
+				<h4 class="text-truncate oneline">
+						<em>scrapy</em><em>爬虫框架</em>简单<em>实例</em>				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">10-06</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							1076</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/ACanswer/article/details/82952327" target="_blank" title="scrapy爬虫框架简单实例">
+							<span class="desc oneline">声明：初学scrapy，总结学习内容。目录一、安装scrapy二、创建工程三、编写代码 3.1item文件编写3.1spider文件编写3.2pipeline文件编写3.3setting文件修改四、测...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/ACanswer">来自：	<span class="blog_title"> ACanswer的专栏</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/Wilson_Iceman/article/details/79179294,BlogCommendFromBaidu_6"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/Wilson_Iceman/article/details/79179294" target="_blank" title="Scrapy爬虫从入门到实例精讲（中）">
+				<h4 class="text-truncate oneline">
+						<em>Scrapy</em>爬虫从<em>入门</em>到<em>实例</em>精讲（中）				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">01-27</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							6057</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/Wilson_Iceman/article/details/79179294" target="_blank" title="Scrapy爬虫从入门到实例精讲（中）">
+							<span class="desc oneline">上次介绍了Scrapy爬虫网络数据的最简单的使用，今天我们来看看如何用工程或者项目来进行网络爬虫。首先我们需要创建一个项目。	scrapystartprojectdouban_book在命令行输入sc...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/Wilson_Iceman">来自：	<span class="blog_title"> Wilson_Iceman的博客</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/finn_wft/article/details/80881946,BlogCommendFromBaidu_7"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/finn_wft/article/details/80881946" target="_blank" title="python3+Scrapy爬虫实战（一）—— 初识Scrapy">
+				<h4 class="text-truncate oneline">
+						python3+<em>Scrapy</em>爬虫实战（一）—— 初识<em>Scrapy</em>				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">07-02</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							2130</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/finn_wft/article/details/80881946" target="_blank" title="python3+Scrapy爬虫实战（一）—— 初识Scrapy">
+							<span class="desc oneline">目录目录初识Scrapy开发环境创建项目创建爬虫项目结构图创建Item分析HTML爬取网页Markdown及扩展表格定义列表代码块脚注目录数学公式UML图:离线写博客浏览器兼容初识Scrapy本人是一...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/finn_wft">来自：	<span class="blog_title"> finn_wft的博客</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    <div class="recommend-item-box recommend-ad-box"><div id="kp_box_60" data-pid="60" data-track-view='{"mod":"kp_popu_60-43","con":",,"}' data-track-click='{"mod":"kp_popu_60-43","con":",,"}'><div id="three_ad8" class="mediav_ad" ></div>
+<script type="text/javascript" src="//static.mediav.com/js/mvf_news_feed.js"></script>
+<script>
+                                               NEWS_FEED({
+                w: 900,
+                h : 84,
+                showid : 'Afihld',
+                placeholderId: "three_ad8",
+                inject : 'define',
+                define : {
+                    imagePosition : 'left',
+                    imageBorderRadius : 3,
+                    imageWidth: 90,
+                    imageHeight: 60,
+                    imageFill : 'clip',
+                    displayImage : true,
+                    displayTitle : true,
+                    titleFontSize: 18,
+                    titleFontColor: '#000',
+                    titleFontFamily : 'Lato,-apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif',
+                    titleFontWeight: 'bold',
+                    titlePaddingTop : 0,
+                    titlePaddingRight : 0,
+                    titlePaddingBottom : 5,
+                    titlePaddingLeft : 16,
+                    displayDesc : true,
+                    descFontSize: 14,
+                    descFontColor: '#8e959a',
+                    descFontFamily : 'Microsoft Yahei',
+                    paddingTop : 10,
+                    paddingRight : 0,
+                    paddingBottom : 0,
+                    paddingLeft : 0,
+                    backgroundColor: '#fff',
+                    hoverColor: '#000'
+                      }
+                  })
+                                        </script></div></div>
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/sun_wangdong/article/details/78340578,BlogCommendFromBaidu_8"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/sun_wangdong/article/details/78340578" target="_blank" title="scrapy爬虫的几个案例">
+				<h4 class="text-truncate oneline">
+						<em>scrapy</em>爬虫的几个案例				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">10-25</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							1194</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/sun_wangdong/article/details/78340578" target="_blank" title="scrapy爬虫的几个案例">
+							<span class="desc oneline">lz最近在学习scrapy爬虫框架，对于此框架，我自己用两个案例进行了实践，初步对这个框架掌握，就写一篇博客来记录下我的学习过程。一、我的环境mac+python2.7.6+scrapy1.4.0版本...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/sun_wangdong">来自：	<span class="blog_title"> 渣渣</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/Wilson_Iceman/article/details/79162942,BlogCommendFromBaidu_9"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/Wilson_Iceman/article/details/79162942" target="_blank" title="Scrapy爬虫从入门到实例精讲（上）">
+				<h4 class="text-truncate oneline">
+						<em>Scrapy</em>爬虫从<em>入门</em>到<em>实例</em>精讲（上）				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">01-25</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							2720</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/Wilson_Iceman/article/details/79162942" target="_blank" title="Scrapy爬虫从入门到实例精讲（上）">
+							<span class="desc oneline">最近几天一直在学习Scrapy这个框架，打算用几篇文章来总结一下自己这段时间学习的知识。   首先我们需要简单介绍一下Scrapy是个什么东西。先来看一张图，是从官网上弄下来的。Scrapy是一个框架...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/Wilson_Iceman">来自：	<span class="blog_title"> Wilson_Iceman的博客</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+          <div class="recommend-item-box blog-expert-recommend-box">
+				<div class="d-flex">
+					<div class="blog-expert-recommend">
+						<div class="blog-expert">
+							<div class="blog-expert-flexbox"></div>
+						</div>
+					</div>
+				</div>
+      </div>
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/elite666/article/details/80105523,BlogCommendClickRateRank_10"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/elite666/article/details/80105523" target="_blank" title="Scrapy爬虫框架的中文教程">
+				<h4 class="text-truncate oneline">
+						<em>Scrapy</em><em>爬虫框架</em>的中文教程				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">04-27</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							237</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/elite666/article/details/80105523" target="_blank" title="Scrapy爬虫框架的中文教程">
+							<span class="desc oneline">http://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/elite666">来自：	<span class="blog_title"> elite666的专栏</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident recommend-other-item-box"  data-track-click='{"mod":"popu_387","con":",https://edu.csdn.net/course/detail/9724,BlogCommendClickRateRank_11"}'>
+		<a href="https://edu.csdn.net/course/detail/9724" target="_blank">
+			<h4 class="text-truncate oneline">
+					【<em>Scrapy</em>进阶】高速图片爬虫			</h4>
+			<div class="info-box d-flex align-content-center">
+					<span class="date">10-10</span>
+			</div>
+			<p class="content oneline">
+        <span class="desc oneline">-</span>
+        			</p>
+		</a>
+
+	</div>
+	
+    
+    
+    			<div class="recommend-item-box recommend-box-ident recommend-download-box clearfix"  data-track-click='{"mod":"popu_387","con":",https://download.csdn.net/download/ddjjnk/9741754,BlogCommendClickRateRank_12"}'>
+			<a href="https://download.csdn.net/download/ddjjnk/9741754" target="_blank">
+				<div class="content clearfix">
+					<div class="">
+						<h4 class="text-truncate oneline clearfix">
+							<em>scrapy</em> 中文教程 文字版 最新						</h4>
+						<span class="data float-right">01-19</span>
+					</div>
+					<div class="desc oneline">
+							scrapy 中文教程 最新版 0.25版的， epub格式					</div>
+          <span class="type-show type-show-download">下载</span>
+				</div>
+			</a>
+		</div>
+	
+    <div class="recommend-item-box recommend-ad-box"><div id="kp_box_61" data-pid="61" data-track-view='{"mod":"kp_popu_61-557","con":",,"}' data-track-click='{"mod":"kp_popu_61-557","con":",,"}'><div id="three_ad13" class="mediav_ad" ></div>
+<script type="text/javascript" src="//static.mediav.com/js/mvf_news_feed.js"></script>
+<script>
+                                               NEWS_FEED({
+                w: 852,
+                h : 60,
+                showid : 'GNKXx7',
+                placeholderId: "three_ad13",
+                inject : 'define',
+                define : {
+                    imagePosition : 'left',
+                    imageBorderRadius : 3,
+                    imageWidth: 90,
+                    imageHeight: 60,
+                    imageFill : 'clip',
+                    displayImage : true,
+                    displayTitle : true,
+                    titleFontSize: 18,
+                    titleFontColor: '#000',
+                    titleFontFamily : 'Lato,-apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif',
+                    titleFontWeight: 'bold',
+                    titlePaddingTop : 0,
+                    titlePaddingRight : 0,
+                    titlePaddingBottom : 5,
+                    titlePaddingLeft : 16,
+                    displayDesc : true,
+                    descFontSize: 14,
+                    descFontColor: '#8e959a',
+                    descFontFamily : 'Microsoft Yahei',
+                    paddingTop : 0,
+                    paddingRight : 0,
+                    paddingBottom : 0,
+                    paddingLeft : 0,
+                    backgroundColor: '#fff',
+                    hoverColor: '#000'
+                      }
+                  })
+                                        </script></div></div>
+    
+    		<div class="recommend-item-box recommend-box-ident recommend-other-item-box"  data-track-click='{"mod":"popu_387","con":",https://edu.csdn.net/course/detail/8147,BlogCommendClickRateRank_13"}'>
+		<a href="https://edu.csdn.net/course/detail/8147" target="_blank">
+			<h4 class="text-truncate oneline">
+					Python网络爬虫之--<em>Scrapy</em>框架的使用			</h4>
+			<div class="info-box d-flex align-content-center">
+					<span class="date">05-16</span>
+			</div>
+			<p class="content oneline">
+        <span class="desc oneline">-</span>
+        			</p>
+		</a>
+
+	</div>
+	
+    
+    
+    			<div class="recommend-item-box recommend-box-ident recommend-download-box clearfix"  data-track-click='{"mod":"popu_387","con":",https://download.csdn.net/download/peterlee1983/9734307,BlogCommendClickRateRank_14"}'>
+			<a href="https://download.csdn.net/download/peterlee1983/9734307" target="_blank">
+				<div class="content clearfix">
+					<div class="">
+						<h4 class="text-truncate oneline clearfix">
+							<em>scrapy</em>中文教程（官方）						</h4>
+						<span class="data float-right">01-11</span>
+					</div>
+					<div class="desc oneline">
+							这个可是一个好东西 最权威的爬虫 官方文档					</div>
+          <span class="type-show type-show-download">下载</span>
+				</div>
+			</a>
+		</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/wds2006sdo/article/details/51210896,BlogCommendESEnWordWeight_15"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/wds2006sdo/article/details/51210896" target="_blank" title="利用Scrapy爬取1905电影网">
+				<h4 class="text-truncate oneline">
+						利用<em>Scrapy</em>爬取1905电影网				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">04-21</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							14万+</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/wds2006sdo/article/details/51210896" target="_blank" title="利用Scrapy爬取1905电影网">
+							<span class="desc oneline">本文将从以下几个方面讲解Scrapy爬虫的基本操作Scrapy爬虫介绍Scrapy安装Scrapy实例——爬取1905电影网相关资料Scrapy爬虫介绍Scrapy是Python开发的一个快速,高层次...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/wds2006sdo">来自：	<span class="blog_title"> wds2006sdo的专栏</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/qq574857122/article/details/16361033,BlogCommendESEnWordWeight_16"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/qq574857122/article/details/16361033" target="_blank" title="强连通分量及缩点tarjan算法解析">
+				<h4 class="text-truncate oneline">
+						强连通分量及缩点tarjan算法解析				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">11-16</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							56万+</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/qq574857122/article/details/16361033" target="_blank" title="强连通分量及缩点tarjan算法解析">
+							<span class="desc oneline">强连通分量：简言之就是找环（每条边只走一次，两两可达）孤立的一个点也是一个连通分量 使用tarjan算法在嵌套的多个环中优先得到最大环(最小环就是每个孤立点） 定义：intTime,DFN[N],Lo...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/qq574857122">来自：	<span class="blog_title"> 九野的博客</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/qq_24076135/article/details/78146641,BlogCommendESEnWordWeight_17"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/qq_24076135/article/details/78146641" target="_blank" title="Python3网络爬虫：初识Scrapy爬虫框架">
+				<h4 class="text-truncate oneline">
+						Python3网络爬虫：初识<em>Scrapy</em><em>爬虫框架</em>				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">10-01</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							921</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/qq_24076135/article/details/78146641" target="_blank" title="Python3网络爬虫：初识Scrapy爬虫框架">
+							<span class="desc oneline">Python3网络爬虫-初识Scrapy爬虫框架Python版本：python3.+运行环境：MacOSIDE：pycharm一前言二初识Scrapy1什么是Scrapy2我能用Scrapy干什么3S...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/qq_24076135">来自：	<span class="blog_title"> Xiao布_unknown的博客</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    <div class="recommend-item-box recommend-ad-box"><div id="kp_box_62" data-pid="62" data-track-view='{"mod":"kp_popu_62-556","con":",,"}' data-track-click='{"mod":"kp_popu_62-556","con":",,"}'><div id="three_ad18" class="mediav_ad" ></div>
+<script type="text/javascript" src="//static.mediav.com/js/mvf_news_feed.js"></script>
+<script>
+                                               NEWS_FEED({
+                w: 852,
+                h : 60,
+                showid : 'Afihld',
+                placeholderId: "three_ad18",
+                inject : 'define',
+                define : {
+                    imagePosition : 'left',
+                    imageBorderRadius : 3,
+                    imageWidth: 90,
+                    imageHeight: 60,
+                    imageFill : 'clip',
+                    displayImage : true,
+                    displayTitle : true,
+                    titleFontSize: 18,
+                    titleFontColor: '#000',
+                    titleFontFamily : 'Lato,-apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif',
+                    titleFontWeight: 'bold',
+                    titlePaddingTop : 0,
+                    titlePaddingRight : 0,
+                    titlePaddingBottom : 5,
+                    titlePaddingLeft : 16,
+                    displayDesc : true,
+                    descFontSize: 14,
+                    descFontColor: '#8e959a',
+                    descFontFamily : 'Microsoft Yahei',
+                    paddingTop : 0,
+                    paddingRight : 0,
+                    paddingBottom : 0,
+                    paddingLeft : 0,
+                    backgroundColor: '#fff',
+                    hoverColor: '#000'
+                      }
+                  })
+                                        </script></div></div>
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/SKI_12/article/details/78840444,BlogCommendFromBaidu_18"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/SKI_12/article/details/78840444" target="_blank" title="Python爬虫之Scrapy爬虫框架">
+				<h4 class="text-truncate oneline">
+						Python爬虫之<em>Scrapy</em><em>爬虫框架</em>				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">12-19</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							2176</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/SKI_12/article/details/78840444" target="_blank" title="Python爬虫之Scrapy爬虫框架">
+							<span class="desc oneline">Scrapy是一个用Python写的爬虫框架，使用Twisted这个异步网络库来处理网络通信。这里通过创建CSDN博客爬虫来学习Scrapy爬虫框架。安装Scrapy：在Linux上，直接pipins...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/SKI_12">来自：	<span class="blog_title"> Mi1k7ea</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/weixin_41558061/article/details/80077423,BlogCommendFromBaidu_19"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/weixin_41558061/article/details/80077423" target="_blank" title="python 之 scrapy 入门 (初入)">
+				<h4 class="text-truncate oneline">
+						python 之 <em>scrapy</em> <em>入门</em> (初入)				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">04-25</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							5548</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/weixin_41558061/article/details/80077423" target="_blank" title="python 之 scrapy 入门 (初入)">
+							<span class="desc oneline">在网上浏览了众多scrapy入门教程作为小白的我总结一下:最重要的一点就是安装Scrapy前提是安装好了AnacondaNavigator过后简直是如履平地啊！可以借鉴https://blog.csd...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/weixin_41558061">来自：	<span class="blog_title"> CN-LILU的博客</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/mmmmmk_/article/details/71796189,BlogCommendFromBaidu_20"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/mmmmmk_/article/details/71796189" target="_blank" title="scrapy初探：写一个简单的爬虫">
+				<h4 class="text-truncate oneline">
+						<em>scrapy</em>初探：写一个简单的爬虫				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">05-13</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							2829</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/mmmmmk_/article/details/71796189" target="_blank" title="scrapy初探：写一个简单的爬虫">
+							<span class="desc oneline">outline:0简介1工程的建立：2简单的爬虫3执行爬虫4文件下载5总结0简介scrapy是一个爬虫框架。该框架能够让我们集中在爬虫的核心处理上。但是，框架带来的缺点就是不够灵活。1工程的建立前提：...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/mmmmmk_">来自：	<span class="blog_title"> mmmmmk_的博客</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/CSDN_AF/article/details/70888852,BlogCommendFromBaidu_21"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/CSDN_AF/article/details/70888852" target="_blank" title="开源爬虫框架各有什么优缺点">
+				<h4 class="text-truncate oneline">
+						开源<em>爬虫框架</em>各有什么优缺点				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">04-28</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							1万+</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/CSDN_AF/article/details/70888852" target="_blank" title="开源爬虫框架各有什么优缺点">
+							<span class="desc oneline">开源爬虫框架各有什么优缺点？作者：老夏开发网络爬虫应该选择Nutch、Crawler4j、WebMagic、scrapy、WebCollector还是其他的？这里按照我的经验随便扯淡一下：上面说的爬虫...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/CSDN_AF">来自：	<span class="blog_title"> CSDN_AF的博客</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/lu_yongchao/article/details/65981661,BlogCommendFromBaidu_22"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/lu_yongchao/article/details/65981661" target="_blank" title="Python网络爬虫专业级框架_scrapy">
+				<h4 class="text-truncate oneline">
+						Python网络爬虫专业级框架_<em>scrapy</em>				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">03-25</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							4671</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/lu_yongchao/article/details/65981661" target="_blank" title="Python网络爬虫专业级框架_scrapy">
+							<span class="desc oneline">首先感慨下当今的互联网，08年刚来北京工作的时候什么也没有、出去面试全凭一张纸质的北京地图跟一张嘴、学习还停留在看书的阶段(天天上下班的公交车上看书看到睡着，哈哈)。通过这段时间的学习，初步掌握了如下...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/lu_yongchao">来自：	<span class="blog_title"> anders lu 的专栏</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    <div class="recommend-item-box recommend-ad-box"><div id="kp_box_63" data-pid="63" data-track-view='{"mod":"kp_popu_63-555","con":",,"}' data-track-click='{"mod":"kp_popu_63-555","con":",,"}'><div id="three_ad23" class="mediav_ad" ></div>
+<script type="text/javascript" src="//static.mediav.com/js/mvf_news_feed.js"></script>
+<script>
+                                               NEWS_FEED({
+                w: 852,
+                h : 60,
+                showid : 'GNKXx7',
+                placeholderId: "three_ad23",
+                inject : 'define',
+                define : {
+                    imagePosition : 'left',
+                    imageBorderRadius : 3,
+                    imageWidth: 90,
+                    imageHeight: 60,
+                    imageFill : 'clip',
+                    displayImage : true,
+                    displayTitle : true,
+                    titleFontSize: 18,
+                    titleFontColor: '#000',
+                    titleFontFamily : 'Lato,-apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif',
+                    titleFontWeight: 'bold',
+                    titlePaddingTop : 0,
+                    titlePaddingRight : 0,
+                    titlePaddingBottom : 5,
+                    titlePaddingLeft : 16,
+                    displayDesc : true,
+                    descFontSize: 14,
+                    descFontColor: '#8e959a',
+                    descFontFamily : 'Microsoft Yahei',
+                    paddingTop : 0,
+                    paddingRight : 0,
+                    paddingBottom : 0,
+                    paddingLeft : 0,
+                    backgroundColor: '#fff',
+                    hoverColor: '#000'
+                      }
+                  })
+                                        </script></div></div>
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/fonyer/article/details/79330249,searchFromBaidu_23"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/fonyer/article/details/79330249" target="_blank" title="python3+scrapy 趣头条爬虫实例">
+				<h4 class="text-truncate oneline">
+						python3+<em>scrapy</em> 趣头条爬虫<em>实例</em>				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">02-16</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							3053</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/fonyer/article/details/79330249" target="_blank" title="python3+scrapy 趣头条爬虫实例">
+							<span class="desc oneline">项目简介	爬取趣头条新闻（http://home.qutoutiao.net/pages/home.html），具体内容：	1、列表页（json）：标题，简介、封面图、来源、发布时间	2、详情页（ht...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/fonyer">来自：	<span class="blog_title"> fonyer的博客</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/a417197457/article/details/79996159,searchFromBaidu_24"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/a417197457/article/details/79996159" target="_blank" title="scrapy爬虫编写流程">
+				<h4 class="text-truncate oneline">
+						<em>scrapy</em>爬虫编写流程				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">04-18</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							301</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/a417197457/article/details/79996159" target="_blank" title="scrapy爬虫编写流程">
+							<span class="desc oneline">1：建立虚拟环境mkvirtualenv--python=(python路径)虚拟环境名2：进入虚拟环境workon虚拟环境名3：安装scrapy使用豆瓣源安装pipinstall-ihttps://...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/a417197457">来自：	<span class="blog_title"> a417197457的博客</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/Wilson_Iceman/article/details/79190356,searchFromBaidu_25"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/Wilson_Iceman/article/details/79190356" target="_blank" title="Scrapy爬虫从入门到实例精讲（下）">
+				<h4 class="text-truncate oneline">
+						<em>Scrapy</em>爬虫从<em>入门</em>到<em>实例</em>精讲（下）				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">01-29</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							691</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/Wilson_Iceman/article/details/79190356" target="_blank" title="Scrapy爬虫从入门到实例精讲（下）">
+							<span class="desc oneline">今天是这个系列的最后一篇文章了，所以我们来一个大一点的，复杂一点的程序。今天我们还是爬豆瓣的内容，是豆瓣影评数据。我们找到一个前段时间特别火的一部皮克斯的动画片《寻梦环游记Coco》来进行今天的测试，...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/Wilson_Iceman">来自：	<span class="blog_title"> Wilson_Iceman的博客</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/sun___shine/article/details/52575009,BlogCommendFromGuangxin_26"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/sun___shine/article/details/52575009" target="_blank" title="使用Scrapy框架编写爬虫">
+				<h4 class="text-truncate oneline">
+						使用<em>Scrapy</em>框架编写爬虫				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">09-18</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							9110</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/sun___shine/article/details/52575009" target="_blank" title="使用Scrapy框架编写爬虫">
+							<span class="desc oneline">网络爬虫，是在网上进行数据抓取的程序，使用它能够抓取特定网页的HTML数据。虽然我们利用一些库开发一个爬虫程序，但是使用框架可以大大提高效率，缩短开发时间。Scrapy是一个使用Python编写的，轻...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/sun___shine">来自：	<span class="blog_title"> sun___shine的博客</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/KayYan/article/details/82867869,BlogCommendFromGuangxin_27"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/KayYan/article/details/82867869" target="_blank" title="Pycharm环境python爬虫初试笔记">
+				<h4 class="text-truncate oneline">
+						Pycharm环境python爬虫初试笔记				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">09-27</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							1050</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/KayYan/article/details/82867869" target="_blank" title="Pycharm环境python爬虫初试笔记">
+							<span class="desc oneline">使用Pycharm进行爬虫，根据https://python.gotrained.com/scrapy-tutorial-web-scraping-craigslist/提供的教程进行尝试。爬虫项目的...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/KayYan">来自：	<span class="blog_title"> KayYan的博客</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    <div class="recommend-item-box recommend-ad-box"><div id="kp_box_64" data-pid="64" data-track-view='{"mod":"kp_popu_64-81","con":",,"}' data-track-click='{"mod":"kp_popu_64-81","con":",,"}'><div id="three_ad28" class="mediav_ad" ></div>
+<script type="text/javascript" src="//static.mediav.com/js/mvf_news_feed.js"></script>
+<script>
+                                               NEWS_FEED({
+                w: 852,
+                h : 60,
+                showid : 'Afihld',
+                placeholderId: "three_ad28",
+                inject : 'define',
+                define : {
+                    imagePosition : 'left',
+                    imageBorderRadius : 3,
+                    imageWidth: 90,
+                    imageHeight: 60,
+                    imageFill : 'clip',
+                    displayImage : true,
+                    displayTitle : true,
+                    titleFontSize: 18,
+                    titleFontColor: '#000',
+                    titleFontFamily : 'Lato,-apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif',
+                    titleFontWeight: 'bold',
+                    titlePaddingTop : 0,
+                    titlePaddingRight : 0,
+                    titlePaddingBottom : 5,
+                    titlePaddingLeft : 16,
+                    displayDesc : true,
+                    descFontSize: 14,
+                    descFontColor: '#8e959a',
+                    descFontFamily : 'Microsoft Yahei',
+                    paddingTop : 0,
+                    paddingRight : 0,
+                    paddingBottom : 0,
+                    paddingLeft : 0,
+                    backgroundColor: '#fff',
+                    hoverColor: '#000'
+                      }
+                  })
+                                        </script></div></div>
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/Lockey23/article/details/77810486,BlogCommendFromGuangxin_28"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/Lockey23/article/details/77810486" target="_blank" title="Python爬虫框架Scrapy学习三记—让虫子爬">
+				<h4 class="text-truncate oneline">
+						Python<em>爬虫框架</em><em>Scrapy</em>学习三记—让虫子爬				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">09-03</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							1789</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/Lockey23/article/details/77810486" target="_blank" title="Python爬虫框架Scrapy学习三记—让虫子爬">
+							<span class="desc oneline">Python爬虫框架Scrapy，创建一个Scrapy项目，编写爬取网站的spider并提取Item，编写ItemPipeline来存储提取到的Item...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/Lockey23">来自：	<span class="blog_title"> Lockey23的博客</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    			<div class="recommend-item-box recommend-box-ident recommend-download-box clearfix"  data-track-click='{"mod":"popu_387","con":",https://download.csdn.net/download/u013055871/10192152,BlogCommendFromQuerySearch_29"}'>
+			<a href="https://download.csdn.net/download/u013055871/10192152" target="_blank">
+				<div class="content clearfix">
+					<div class="">
+						<h4 class="text-truncate oneline clearfix">
+							<em>Scrapy</em><em>爬虫框架</em>视频						</h4>
+						<span class="data float-right">01-06</span>
+					</div>
+					<div class="desc oneline">
+							Scrapy爬虫框架Scrapy爬虫框架视频Scrapy爬虫框架视频Scrapy爬虫框架视频					</div>
+          <span class="type-show type-show-download">下载</span>
+				</div>
+			</a>
+		</div>
+	
+    
+    
+    			<div class="recommend-item-box recommend-box-ident recommend-download-box clearfix"  data-track-click='{"mod":"popu_387","con":",https://download.csdn.net/download/wyzh97/10463167,BlogCommendFromQuerySearch_30"}'>
+			<a href="https://download.csdn.net/download/wyzh97/10463167" target="_blank">
+				<div class="content clearfix">
+					<div class="">
+						<h4 class="text-truncate oneline clearfix">
+							精通<em>Scrapy</em>网络爬虫.pdf						</h4>
+						<span class="data float-right">06-06</span>
+					</div>
+					<div class="desc oneline">
+							本书为pdf版本。本书深入系统地介绍了Python流行框架Scrapy的相关技术及使用技巧。全书共14章，从逻辑上可分为基础篇和高级篇两部分，基础篇重点介绍Scrapy的核心元素，如spider、selector、item、link等；高...					</div>
+          <span class="type-show type-show-download">下载</span>
+				</div>
+			</a>
+		</div>
+	
+    
+    
+    			<div class="recommend-item-box recommend-box-ident recommend-download-box clearfix"  data-track-click='{"mod":"popu_387","con":",https://download.csdn.net/download/demorngel/10494404,BlogCommendFromQuerySearch_31"}'>
+			<a href="https://download.csdn.net/download/demorngel/10494404" target="_blank">
+				<div class="content clearfix">
+					<div class="">
+						<h4 class="text-truncate oneline clearfix">
+							精通<em>Scrapy</em>网络爬虫 (epub + azw3)						</h4>
+						<span class="data float-right">06-23</span>
+					</div>
+					<div class="desc oneline">
+							本书深入系统地介绍了Python流行框架Scrapy的相关技术及使用技巧。全书共14章，从逻辑上可分为基础篇和高级篇两部分，基础篇重点介绍Scrapy的核心元素，如spider、selector、item、link等；高级篇讲解爬虫的高级...					</div>
+          <span class="type-show type-show-download">下载</span>
+				</div>
+			</a>
+		</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/gates0087/article/details/79422694,BlogCommendFromQuerySearch_32"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/gates0087/article/details/79422694" target="_blank" title="python3+scrapy简单爬虫入门">
+				<h4 class="text-truncate oneline">
+						python3+<em>scrapy</em>简单爬虫<em>入门</em>				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">03-02</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							1356</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/gates0087/article/details/79422694" target="_blank" title="python3+scrapy简单爬虫入门">
+							<span class="desc oneline">python+scrapy</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/gates0087">来自：	<span class="blog_title"> senga's blog</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    <div class="recommend-item-box recommend-ad-box"><div id="kp_box_65" data-pid="65" data-track-view='{"mod":"kp_popu_65-84","con":",,"}' data-track-click='{"mod":"kp_popu_65-84","con":",,"}'><div id="three_ad33" class="mediav_ad" ></div>
+<script>
+                                               NEWS_FEED({
+                w: 852,
+                h : 60,
+                showid : 'GNKXx7',
+                placeholderId: "three_ad33",
+                inject : 'define',
+                define : {
+                    imagePosition : 'left',
+                    imageBorderRadius : 3,
+                    imageWidth: 90,
+                    imageHeight: 60,
+                    imageFill : 'clip',
+                    displayImage : true,
+                    displayTitle : true,
+                    titleFontSize: 18,
+                    titleFontColor: '#000',
+                    titleFontFamily : 'Lato,-apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif',
+                    titleFontWeight: 'bold',
+                    titlePaddingTop : 0,
+                    titlePaddingRight : 0,
+                    titlePaddingBottom : 5,
+                    titlePaddingLeft : 16,
+                    displayDesc : true,
+                    descFontSize: 14,
+                    descFontColor: '#8e959a',
+                    descFontFamily : 'Microsoft Yahei',
+                    paddingTop : 0,
+                    paddingRight : 0,
+                    paddingBottom : 0,
+                    paddingLeft : 0,
+                    backgroundColor: '#fff',
+                    hoverColor: '#000'
+                      }
+                  })
+                                        </script></div></div>
+    
+    			<div class="recommend-item-box recommend-box-ident recommend-download-box clearfix"  data-track-click='{"mod":"popu_387","con":",https://download.csdn.net/download/shanshengshannian/10761699,BlogCommendFromQuerySearch_33"}'>
+			<a href="https://download.csdn.net/download/shanshengshannian/10761699" target="_blank">
+				<div class="content clearfix">
+					<div class="">
+						<h4 class="text-truncate oneline clearfix">
+							python网盘资源、<em>scrapy</em>框架、分布式爬虫、diagno、python开发						</h4>
+						<span class="data float-right">11-03</span>
+					</div>
+					<div class="desc oneline">
+							资源是真实的，是别人分享给我的，我也来分享给大家。					</div>
+          <span class="type-show type-show-download">下载</span>
+				</div>
+			</a>
+		</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/qq_37143745/article/details/80996707,BlogCommendFromThirdService_34"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/qq_37143745/article/details/80996707" target="_blank" title="Scrapy框架流程图解析">
+				<h4 class="text-truncate oneline">
+						<em>Scrapy</em>框架流程图解析				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">07-12</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							2004</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/qq_37143745/article/details/80996707" target="_blank" title="Scrapy框架流程图解析">
+							<span class="desc oneline">今日语：心空，望望远方的高楼；心属，依然停留接下来就放一张scrapy的流程图喽~简单叙述一下每层图的含义吧：Spiders(爬虫):它负责处理所有Responses,从中分析提取数据，获取Item字...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/qq_37143745">来自：	<span class="blog_title"> 田田&味道的博客</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/loner_fang/article/details/81022164,BlogCommendFromThirdService_35"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/loner_fang/article/details/81022164" target="_blank" title="scrapy框架的基本使用">
+				<h4 class="text-truncate oneline">
+						<em>scrapy</em>框架的基本使用				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">07-13</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							762</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/loner_fang/article/details/81022164" target="_blank" title="scrapy框架的基本使用">
+							<span class="desc oneline">一、使用场景在需要爬取的数据量极大的情况下，建议使用scrapy框架。性能好。二、scrapy工作原理engine			引擎，类似于一个中间件，负责控制数据流在系统中的所有组件之间流动，可以理解为“传...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/loner_fang">来自：	<span class="blog_title"> loner_fang的博客</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/zjiang1994/article/details/52679174,BlogCommendFromThirdService_36"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/zjiang1994/article/details/52679174" target="_blank" title="（学习笔记）Python BeautifulSoup4 取值部分">
+				<h4 class="text-truncate oneline">
+						（学习笔记）Python BeautifulSoup4 取值部分				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">09-27</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							1万+</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/zjiang1994/article/details/52679174" target="_blank" title="（学习笔记）Python BeautifulSoup4 取值部分">
+							<span class="desc oneline">取值与赋值从网页获取了需要的标签后，要做的就是从标签中获得需要的值了。BS4的取值主要通过以下方法。标签名#获取标签名tag.name#对应的该变标签名为tag.name=&quot;你想要的标签&quot;属性#获取属...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/zjiang1994">来自：	<span class="blog_title"> Clew123的博客</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/yancey_blog/article/details/53895062,BlogCommendFromBaidu_37"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/yancey_blog/article/details/53895062" target="_blank" title="Scrapy爬虫(六)：多个爬虫组合实例">
+				<h4 class="text-truncate oneline">
+						<em>Scrapy</em>爬虫(六)：多个爬虫组合<em>实例</em>				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">12-27</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							1万+</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/yancey_blog/article/details/53895062" target="_blank" title="Scrapy爬虫(六)：多个爬虫组合实例">
+							<span class="desc oneline">Scrapy爬虫(六)：多个爬虫组合实例Scrapy爬虫六多个爬虫组合实例需求分析创建项目运行爬虫本章将实现多个爬虫共同工作的实例。需求分析我们现在有这么个需求，既要爬取音乐详情又要爬取乐评，既要爬取...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/yancey_blog">来自：	<span class="blog_title"> 李燕西的博客</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    <div class="recommend-item-box recommend-ad-box"><div id="kp_box_66" data-pid="66" data-track-view='{"mod":"kp_popu_66-881","con":",,"}' data-track-click='{"mod":"kp_popu_66-881","con":",,"}'><script src="https://nbrecsys.4paradigm.com/resource/cus/csdn/sdk-csdn-render.js"></script>
+<div
+  id="_4paradigm_T38_render"
+  class="_paradigm_T_ads_render _4paradigm_box recommend-item-box clearfix"
+></div>
+<script>
+  //  渲染T38  传入 渲染位置的id和渲染位置的标记
+  p4CSDNRender_T("_4paradigm_T38_render", "T38");
+</script></div></div>
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/yy284872497/article/details/85343680,BlogCommendFromBaidu_38"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/yy284872497/article/details/85343680" target="_blank" title="基于Python框架Scrapy爬虫示例">
+				<h4 class="text-truncate oneline">
+						基于Python框架<em>Scrapy</em>爬虫示例				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">12-31</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							129</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/yy284872497/article/details/85343680" target="_blank" title="基于Python框架Scrapy爬虫示例">
+							<span class="desc oneline">本篇主要介绍基于Scrapy框架对豆瓣电影TOP250：https://movie.douban.com/top250进行信息抓取：包括电影排名、电影名称、电影介绍、星级、评价数、描述等信息，并存储到...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/yy284872497">来自：	<span class="blog_title"> 佯佯DESIGNER</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/qq_29186489/article/details/78742633,BlogCommendFromBaidu_39"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/qq_29186489/article/details/78742633" target="_blank" title="scrapy爬虫框架的详细用法">
+				<h4 class="text-truncate oneline">
+						<em>scrapy</em><em>爬虫框架</em>的详细用法				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">12-12</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							3万+</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/qq_29186489/article/details/78742633" target="_blank" title="scrapy爬虫框架的详细用法">
+							<span class="desc oneline">Scrapy，Python开发的一个快速、高层次的屏幕抓取和web抓取框架，用于抓取web站点并从页面中提取结构化的数据。Scrapy用途广泛，可以用于数据挖掘、监测和自动化测试。Scrapy吸引人的...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/qq_29186489">来自：	<span class="blog_title"> 天涯笨熊的博客</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/wxg694175346/article/details/19642329,BlogCommendFromBaidu_40"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/wxg694175346/article/details/19642329" target="_blank" title="[Python]网络爬虫（12）：爬虫框架Scrapy的第一个爬虫示例入门教程">
+				<h4 class="text-truncate oneline">
+						[Python]网络爬虫（12）：<em>爬虫框架</em><em>Scrapy</em>的第一个爬虫示例<em>入门</em>教程				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">02-23</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							20万+</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/wxg694175346/article/details/19642329" target="_blank" title="[Python]网络爬虫（12）：爬虫框架Scrapy的第一个爬虫示例入门教程">
+							<span class="desc oneline">爬虫框架Scrapy的第一个爬虫示例入门教程。我们使用dmoz.org这个网站来作为小抓抓一展身手的对象。首先先要回答一个问题。问：把网站装进爬虫里，总共分几步？答案很简单，四步：新建项目(Proje...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/wxg694175346">来自：	<span class="blog_title"> 汪海的实验室</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/fly_yr/article/details/51540269,BlogCommendFromBaidu_41"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/fly_yr/article/details/51540269" target="_blank" title="Python2 爬虫（六） -- 初尝Scrapy框架">
+				<h4 class="text-truncate oneline">
+						Python2 爬虫（六） -- 初尝<em>Scrapy</em>框架				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">05-30</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							1万+</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/fly_yr/article/details/51540269" target="_blank" title="Python2 爬虫（六） -- 初尝Scrapy框架">
+							<span class="desc oneline">1、Scrapy简介Scrapy是一个为了爬取网站数据，提取结构性数据而编写的应用框架。可以应用在包括数据挖掘，信息处理或存储历史数据等一系列的程序中。其最初是为了页面抓取(更确切来说,网络抓取)所设...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/fly_yr">来自：	<span class="blog_title"> 指尖飞舞</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    			<div class="recommend-item-box recommend-box-ident recommend-download-box clearfix"  data-track-click='{"mod":"popu_387","con":",https://download.csdn.net/download/tangan007/9556354,BlogCommendClickRateRank_42"}'>
+			<a href="https://download.csdn.net/download/tangan007/9556354" target="_blank">
+				<div class="content clearfix">
+					<div class="">
+						<h4 class="text-truncate oneline clearfix">
+							<em>scrapy</em>官方手册中文版.pdf						</h4>
+						<span class="data float-right">06-22</span>
+					</div>
+					<div class="desc oneline">
+							scrapy官方手册中文版.pdf					</div>
+          <span class="type-show type-show-download">下载</span>
+				</div>
+			</a>
+		</div>
+	
+    <div class="recommend-item-box recommend-ad-box"><div id="kp_box_67" data-pid="67" data-track-view='{"mod":"kp_popu_67-882","con":",,"}' data-track-click='{"mod":"kp_popu_67-882","con":",,"}'><script src="https://nbrecsys.4paradigm.com/resource/cus/csdn/sdk-csdn-render.js"></script>
+<div
+  id="_4paradigm_T43_render"
+  class="_paradigm_T_ads_render _4paradigm_box recommend-item-box clearfix"
+></div>
+<script>
+  //  渲染T43  传入 渲染位置的id和渲染位置的标记
+  p4CSDNRender_T("_4paradigm_T43_render", "T43");
+</script></div></div>
+    
+    		<div class="recommend-item-box recommend-box-ident recommend-other-item-box"  data-track-click='{"mod":"popu_387","con":",https://edu.csdn.net/course/detail/8216,BlogCommendClickRateRank_43"}'>
+		<a href="https://edu.csdn.net/course/detail/8216" target="_blank">
+			<h4 class="text-truncate oneline">
+					9小时变身Python极客			</h4>
+			<div class="info-box d-flex align-content-center">
+					<span class="date">05-21</span>
+			</div>
+			<p class="content oneline">
+        <span class="desc oneline">-</span>
+        			</p>
+		</a>
+
+	</div>
+	
+    
+    
+    			<div class="recommend-item-box recommend-box-ident recommend-download-box clearfix"  data-track-click='{"mod":"popu_387","con":",https://download.csdn.net/download/hi_chen_xingwang/9644418,BlogCommendClickRateRank_44"}'>
+			<a href="https://download.csdn.net/download/hi_chen_xingwang/9644418" target="_blank">
+				<div class="content clearfix">
+					<div class="">
+						<h4 class="text-truncate oneline clearfix">
+							<em>scrapy</em> 中文教程						</h4>
+						<span class="data float-right">10-01</span>
+					</div>
+					<div class="desc oneline">
+							scrapy 中文教程 爬虫教程 中文文档					</div>
+          <span class="type-show type-show-download">下载</span>
+				</div>
+			</a>
+		</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/weixin_39378885/article/details/78431566,BlogCommendClickRateRank_45"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/weixin_39378885/article/details/78431566" target="_blank" title="Python之scrapy使用教程">
+				<h4 class="text-truncate oneline">
+						Python之<em>scrapy</em>使用教程				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">11-03</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							507</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/weixin_39378885/article/details/78431566" target="_blank" title="Python之scrapy使用教程">
+							<span class="desc oneline">scrapy抓取西刺代理并用Excel保存</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/weixin_39378885">来自：	<span class="blog_title"> 某嫌疑犯</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/defending/article/details/78524054,BlogCommendFromBaidu_46"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/defending/article/details/78524054" target="_blank" title="scrapy">
+				<h4 class="text-truncate oneline">
+						<em>scrapy</em>				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">11-13</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							1958</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/defending/article/details/78524054" target="_blank" title="scrapy">
+							<span class="desc oneline">中文文档  http://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html一介绍  Scrapy一个开源和协作的框架，其最初是为了页面抓取...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/defending">来自：	<span class="blog_title"> defending的博客</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/elecjack/article/details/51614021,BlogCommendFromBaidu_47"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/elecjack/article/details/51614021" target="_blank" title="爬虫系列2：scrapy项目入门案例分析">
+				<h4 class="text-truncate oneline">
+						爬虫系列2：<em>scrapy</em>项目<em>入门</em>案例分析				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">06-08</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							4037</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/elecjack/article/details/51614021" target="_blank" title="爬虫系列2：scrapy项目入门案例分析">
+							<span class="desc oneline">本文从一个基础案例入手，较为详细的分析了scrapy项目的建设过程（在官方文档的基础上做了调整）。主要内容如下：0、准备工作1、scrapy项目结构2、编写spider3、编写item.py4、编写p...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/elecjack">来自：	<span class="blog_title"> JackFeng's Blog</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    <div class="recommend-item-box recommend-ad-box"><div id="kp_box_68" data-pid="68" data-track-view='{"mod":"kp_popu_68-883","con":",,"}' data-track-click='{"mod":"kp_popu_68-883","con":",,"}'><!-- T48 位置 -->
+<script src="https://nbrecsys.4paradigm.com/resource/cus/csdn/sdk-csdn-render.js"></script>
+<div
+  id="_4paradigm_T48_render"
+  class="_paradigm_T_ads_render _4paradigm_box recommend-item-box clearfix"
+></div>
+<script>
+  //  渲染T48  传入 渲染位置的id和渲染位置的标记
+  p4CSDNRender_T("_4paradigm_T48_render", "T48");
+</script></div></div>
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/baidu_21833433/article/details/70315081,BlogCommendFromBaidu_48"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/baidu_21833433/article/details/70315081" target="_blank" title="python爬虫实例项目大全">
+				<h4 class="text-truncate oneline">
+						python爬虫<em>实例</em>项目大全				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">04-21</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							3万+</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/baidu_21833433/article/details/70315081" target="_blank" title="python爬虫实例项目大全">
+							<span class="desc oneline">WechatSogou [1]- 微信公众号爬虫。基于搜狗微信搜索的微信公众号爬虫接口，可以扩展成基于搜狗搜索的爬虫，返回结果是列表，每一项均是公众号具体信息字典。DouBanSpider [2]-豆...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/baidu_21833433">来自：	<span class="blog_title"> baidu_21833433的博客</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/lanse_fengsha/article/details/78267603,BlogCommendFromBaidu_49"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/lanse_fengsha/article/details/78267603" target="_blank" title="快速上手——我用scrapy写爬虫（一）">
+				<h4 class="text-truncate oneline">
+						快速上手——我用<em>scrapy</em>写爬虫（一）				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">10-17</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							1509</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/lanse_fengsha/article/details/78267603" target="_blank" title="快速上手——我用scrapy写爬虫（一）">
+							<span class="desc oneline">写在前面用python写爬虫的人很多，python的爬虫框架也很多，诸如pyspider和scrapy，笔者还是笔记倾向于scrapy，本文就用python写一个小爬虫demo。本文适用于有一定pyt...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/lanse_fengsha">来自：	<span class="blog_title"> 李否否</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/maoyuanming0806/article/details/78067446,BlogCommendHotData_0"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/maoyuanming0806/article/details/78067446" target="_blank" title="搭建图片服务器《二》-linux安装nginx">
+				<h4 class="text-truncate oneline">
+						搭建图片服务器《二》-linux安装nginx				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">09-22</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							3万+</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/maoyuanming0806/article/details/78067446" target="_blank" title="搭建图片服务器《二》-linux安装nginx">
+							<span class="desc oneline">nginx是个好东西，Nginx (engine x) 是一个高性能的HTTP和反向代理服务器，也是一个IMAP/POP3/SMTP服务器。Nginx是由伊戈尔·赛索耶夫为俄罗斯访问量第二的Rambl...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/maoyuanming0806">来自：	<span class="blog_title"> maoyuanming0806的博客</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/fendoubasaonian/article/details/50180025,BlogCommendHotData_1"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/fendoubasaonian/article/details/50180025" target="_blank" title="虚拟机Linux如何使用笔记本电脑的前置摄像头">
+				<h4 class="text-truncate oneline">
+						虚拟机Linux如何使用笔记本电脑的前置摄像头				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">12-04</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							1万+</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/fendoubasaonian/article/details/50180025" target="_blank" title="虚拟机Linux如何使用笔记本电脑的前置摄像头">
+							<span class="desc oneline">一、Windows设置1.点击开始-&gt;运行，在对话框中输入”services.msc”，回车，打开windows服务管理器。2.在服务列表中选中”VMware USB Arbitration Serv...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/fendoubasaonian">来自：	<span class="blog_title"> fendoubasaonian的专栏</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/diandianxiyu/article/details/53068012,BlogCommendHotData_2"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/diandianxiyu/article/details/53068012" target="_blank" title="【小程序】微信小程序开发实践">
+				<h4 class="text-truncate oneline">
+						【小程序】微信小程序开发实践				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">11-07</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							24万+</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/diandianxiyu/article/details/53068012" target="_blank" title="【小程序】微信小程序开发实践">
+							<span class="desc oneline">帐号相关流程注册范围
+企业
+政府
+媒体
+其他组织换句话讲就是不让个人开发者注册。 :)填写企业信息不能使用和之前的公众号账户相同的邮箱,也就是说小程序是和微信公众号一个层级的。填写公司机构信息,对公账...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/diandianxiyu">来自：	<span class="blog_title"> 小雨同学的技术博客</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/ohmygirl/article/details/17846199,BlogCommendHotData_3"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/ohmygirl/article/details/17846199" target="_blank" title="【HTTP】Fiddler（一） - Fiddler简介">
+				<h4 class="text-truncate oneline">
+						【HTTP】Fiddler（一） - Fiddler简介				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">01-04</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							30万+</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/ohmygirl/article/details/17846199" target="_blank" title="【HTTP】Fiddler（一） - Fiddler简介">
+							<span class="desc oneline">1.为什么是Fiddler?
+抓包工具有很多，小到最常用的web调试工具firebug，达到通用的强大的抓包工具wireshark.为什么使用fiddler?原因如下：
+a.Firebug虽然可以抓包...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/ohmygirl">来自：	<span class="blog_title"> 专注、专心</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/silentpebble/article/details/41279285,BlogCommendHotData_5"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/silentpebble/article/details/41279285" target="_blank" title="centos 查看命令源码">
+				<h4 class="text-truncate oneline">
+						centos 查看命令源码				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">11-19</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							7万+</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/silentpebble/article/details/41279285" target="_blank" title="centos 查看命令源码">
+							<span class="desc oneline"># yum install yum-utils
+
+
+设置源:
+[base-src]
+name=CentOS-5.4 - Base src -
+baseurl=http://vault.ce...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/silentpebble">来自：	<span class="blog_title"> linux/unix</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/themagickeyjianan/article/details/52386981,BlogCommendHotData_6"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/themagickeyjianan/article/details/52386981" target="_blank" title="python图片处理类之~PIL.Image模块(ios android icon图标自动生成处理)">
+				<h4 class="text-truncate oneline">
+						python图片处理类之~PIL.Image模块(ios android icon图标自动生成处理)				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">08-31</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							5万+</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/themagickeyjianan/article/details/52386981" target="_blank" title="python图片处理类之~PIL.Image模块(ios android icon图标自动生成处理)">
+							<span class="desc oneline">1.从pyCharm提示下载PIL包
+
+ http://www.pythonware.com/products/pil/
+
+ 
+
+2.解压后，进入到目录下
+
+
+cd /Users/jianan/Dow...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/themagickeyjianan">来自：	<span class="blog_title"> 专注于cocos+unity+服务器全栈</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/kongwei521/article/details/51626589,BlogCommendHotData_7"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/kongwei521/article/details/51626589" target="_blank" title="C#实现开发windows服务实现自动从FTP服务器下载文件（自行设置分/时执行）">
+				<h4 class="text-truncate oneline">
+						C#实现开发windows服务实现自动从FTP服务器下载文件（自行设置分/时执行）				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">06-10</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							2万+</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/kongwei521/article/details/51626589" target="_blank" title="C#实现开发windows服务实现自动从FTP服务器下载文件（自行设置分/时执行）">
+							<span class="desc oneline">最近在做一个每天定点从FTP自动下载节目.xml并更新到数据库的功能。首先想到用 FileSystemWatcher来监控下载到某个目录中的文件是否发生改变，如果改变就执行相应的操作，然后用timer...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/kongwei521">来自：	<span class="blog_title"> kongwei521的专栏</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/u011860731/article/details/48733073,BlogCommendHotData_8"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/u011860731/article/details/48733073" target="_blank" title="ThreadLocal的设计理念与作用">
+				<h4 class="text-truncate oneline">
+						ThreadLocal的设计理念与作用				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">09-25</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							5万+</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/u011860731/article/details/48733073" target="_blank" title="ThreadLocal的设计理念与作用">
+							<span class="desc oneline">Java中的ThreadLocal类允许我们创建只能被同一个线程读写的变量。因此，如果一段代码含有一个ThreadLocal变量的引用，即使两个线程同时执行这段代码，它们也无法访问到对方的Thread...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/u011860731">来自：	<span class="blog_title"> u011860731的专栏</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/super_wu1992/article/details/52302672,BlogCommendHotData_9"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/super_wu1992/article/details/52302672" target="_blank" title="基于以太坊的区块链浏览器搭建">
+				<h4 class="text-truncate oneline">
+						基于以太坊的区块链浏览器搭建				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">08-24</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							1万+</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/super_wu1992/article/details/52302672" target="_blank" title="基于以太坊的区块链浏览器搭建">
+							<span class="desc oneline">区块链目前发展很火，有很大发展前景，本文主要是在本地私有链搭建成功后，利用web3.js、AngularJS和servlet对搭建的私有链上区块信息包括地址、区块信息、交易信息等信息的展示。
+效果展...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/super_wu1992">来自：	<span class="blog_title"> 吴豪超的博客</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/xu__cg/article/details/53190763,BlogCommendHotData_10"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/xu__cg/article/details/53190763" target="_blank" title="Java设计模式18——状态模式">
+				<h4 class="text-truncate oneline">
+						Java设计模式18——状态模式				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">11-16</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							9234</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/xu__cg/article/details/53190763" target="_blank" title="Java设计模式18——状态模式">
+							<span class="desc oneline">一、定义状态(State)模式又称为状态对象模式(Pattern of Objects for State),状态模式是对象的行为模式。状态模式允许一个对象在其内部状态改变时改变其行为，用于解决系统中...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/xu__cg">来自：	<span class="blog_title"> 小小本科生成长之路</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/wuchengzeng/article/details/50037611,BlogCommendHotData_11"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/wuchengzeng/article/details/50037611" target="_blank" title="jquery/js实现一个网页同时调用多个倒计时(最新的)">
+				<h4 class="text-truncate oneline">
+						jquery/js实现一个网页同时调用多个倒计时(最新的)				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">11-25</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							42万+</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/wuchengzeng/article/details/50037611" target="_blank" title="jquery/js实现一个网页同时调用多个倒计时(最新的)">
+							<span class="desc oneline">jquery/js实现一个网页同时调用多个倒计时(最新的)
+
+最近需要网页添加多个倒计时. 查阅网络,基本上都是千遍一律的不好用. 自己按需写了个.希望对大家有用. 有用请赞一个哦!
+
+
+
+//js
+...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/wuchengzeng">来自：	<span class="blog_title"> Websites</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/gefangshuai/article/details/50328451,BlogCommendHotData_12"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/gefangshuai/article/details/50328451" target="_blank" title="关于SpringBoot bean无法注入的问题（与文件包位置有关）">
+				<h4 class="text-truncate oneline">
+						关于SpringBoot bean无法注入的问题（与文件包位置有关）				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">12-16</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							15万+</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/gefangshuai/article/details/50328451" target="_blank" title="关于SpringBoot bean无法注入的问题（与文件包位置有关）">
+							<span class="desc oneline">问题场景描述整个项目通过Maven构建，大致结构如下：
+核心Spring框架一个module spring-boot-base
+service和dao一个module server-core
+提供系统...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/gefangshuai">来自：	<span class="blog_title"> 开发随笔</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/VBcom/article/details/7245186,BlogCommendHotData_13"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/VBcom/article/details/7245186" target="_blank" title="DirectX修复工具增强版">
+				<h4 class="text-truncate oneline">
+						DirectX修复工具增强版				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">02-09</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							190万+</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/VBcom/article/details/7245186" target="_blank" title="DirectX修复工具增强版">
+							<span class="desc oneline">最后更新：2018-12-20
+
+DirectX修复工具最新版：DirectX Repair V3.8 增强版  NEW!
+
+版本号：V3.8.0.11638
+
+大小: 107MB/7z格式压缩，18...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/VBcom">来自：	<span class="blog_title"> VBcom的专栏</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+    		<div class="recommend-item-box recommend-box-ident type_blog clearfix"  data-track-click='{"mod":"popu_387","con":",https://blog.csdn.net/wild46cat/article/details/54171973,BlogCommendHotData_14"}'>
+			<div class="content">
+				<a href="https://blog.csdn.net/wild46cat/article/details/54171973" target="_blank" title="spark 存储json数据遇到问题——json4s使用（一）">
+				<h4 class="text-truncate oneline">
+						spark 存储json数据遇到问题——json4s使用（一）				</h4>
+				<div class="info-box d-flex align-content-center">
+					<p class="date-and-readNum oneline">
+						<span class="date hover-show">01-07</span>
+						<span class="read-num hover-hide">
+              阅读数 
+							8942</span>
+						</p>
+					</div>
+				</a>
+					<p class="content">
+						<a href="https://blog.csdn.net/wild46cat/article/details/54171973" target="_blank" title="spark 存储json数据遇到问题——json4s使用（一）">
+							<span class="desc oneline">spark 存储json数据遇到问题——json4s使用（一）
+在进行spark的学习过程中遇到了这样的问题。
+1、《O'REILLY Learning Spark》的书中说道能够使用spark进...</span>
+						</a>
+						  <span class="blog_title_box oneline ">
+							                <span class="type-show type-show-blog type-show-after">博文</span>
+                                  <a target="_blank" href="https://blog.csdn.net/wild46cat">来自：	<span class="blog_title">  止水的专栏</span></a>
+                							              </span>
+					</p>
+			</div>
+					</div>
+	
+    
+    
+        <div class="recommend-item-box type_hot_word">
+            <div class="content clearfix">
+        <div class="word float-left">
+                          <span>
+            <a href="https://edu.csdn.net/course/play/8216/221598 " target="_blank">
+            Python爬虫框架scrapy实例          </a></span>
+                                  <span>
+            <a href="https://edu.csdn.net/course/play/8216/221595 " target="_blank">
+            Python爬虫框架scrapy安装          </a></span>
+                                  <span>
+            <a href="https://edu.csdn.net/course/play/8216/221596 " target="_blank">
+            Python爬虫框架scrapy部署          </a></span>
+                                  <span>
+            <a href="https://edu.csdn.net/course/play/8216/221599 " target="_blank">
+            Python爬虫框架scrapy教程          </a></span>
+                                  <span>
+            <a href="https://edu.csdn.net/course/play/8216/221597 " target="_blank">
+            Python爬虫框架scrapy配置          </a></span>
+                        </div>
+      </div>
+                  <div class="content clearfix">
+        <div class="float-left">
+                  <span>
+            <a href="https://www.csdn.net/gather_1a/MtjaEg4sMDU2My1kb3dubG9hZAO0O0OO0O0O.html" target="_blank">
+            ios获取idfa</a>
+          </span>
+                  <span>
+            <a href="https://www.csdn.net/gather_10/MtTaYgwsNzkyMS1kb3dubG9hZAO0O0OO0O0O.html" target="_blank">
+            server的安全控制模型是什么 sql</a>
+          </span>
+                  <span>
+            <a href="https://www.csdn.net/gather_12/MtTakgxsODg1Ni1kb3dubG9hZAO0O0OO0O0O.html" target="_blank">
+            android title搜索</a>
+          </span>
+                  <span>
+            <a href="https://www.csdn.net/gather_11/MtjaIgwsNzk3Ni1kb3dubG9hZAO0O0OO0O0O.html" target="_blank">
+            ios 动态修改约束</a>
+          </span>
+                  <span>
+            <a href="https://www.csdn.net/gather_4a/MtTaQg4sOS1lZHUO0O0O.html" target="_blank">
+            python3.0爬虫入门教程</a>
+          </span>
+                  <span>
+            <a href="https://www.csdn.net/gather_4a/MtjakgzsNC1lZHUO0O0O.html" target="_blank">
+            python3.4爬虫入门教程</a>
+          </span>
+                </div>
+      </div>
+          </div>
+
+
+            <div class="recommend-loading-box">
+                <img src='https://csdnimg.cn/release/phoenix/images/feedLoading.gif'>
+            </div>
+            <div class="recommend-end-box">
+                <p class="text-center">没有更多推荐了，<a href="https://blog.csdn.net/" class="c-blue c-blue-hover c-blue-focus">返回首页</a></p>
+            </div>
+        </div>
+    </main>
+
+    <aside>
+		    <div id="asideProfile" class="aside-box">
+    <!-- <h3 class="aside-title">个人资料</h3> -->
+    <div class="profile-intro d-flex">
+        <div class="avatar-box d-flex justify-content-center flex-column">
+            <a href="https://blog.csdn.net/zjiang1994">
+                <img src="https://avatar.csdn.net/C/9/6/3_zjiang1994.jpg" class="avatar_pic">
+            </a>
+            
+        </div>
+        <div class="user-info d-flex justify-content-center flex-column">
+            <p class="name csdn-tracking-statistics tracking-click" data-mod="popu_379">
+                <a href="https://blog.csdn.net/zjiang1994" target="_blank" class="" id="uid">Clew123</a>
+            </p>
+                    </div>
+                <div class="opt-box d-flex justify-content-center flex-column">
+            <span  class="csdn-tracking-statistics tracking-click" data-mod="popu_379">
+                <a class="btn btn-sm btn-red-hollow attention" id="btnAttent">关注</a>
+            </span>
+        </div>
+            </div>
+    <div class="data-info d-flex item-tiling">
+                <dl class="text-center" title="89">
+                        <dt><a href="https://blog.csdn.net/zjiang1994?t=1">原创</a></dt>
+            <dd><a href="https://blog.csdn.net/zjiang1994?t=1"><span class="count">89</span></a></dd>
+                    </dl>
+        <dl class="text-center" id="fanBox" title="88">
+            <dt>粉丝</dt>
+            <dd><span class="count" id="fan">88</span></dd>
+        </dl>
+        <dl class="text-center" title="100">
+            <dt>喜欢</dt>
+            <dd><span class="count">100</span></dd>
+        </dl>
+        <dl class="text-center" title="156">
+            <dt>评论</dt>
+            <dd><span class="count">156</span></dd>
+        </dl>
+    </div>
+    <div class="grade-box clearfix">
+        <dl>
+            <dt>等级：</dt>
+            <dd>
+                <a href="https://blog.csdn.net/home/help.html#level" title="5级,点击查看等级说明" target="_blank">
+                    <svg class="icon icon-level" aria-hidden="true">
+                        <use xlink:href="#csdnc-bloglevel-5"></use>
+                    </svg>
+                </a>
+            </dd>
+        </dl>
+        <dl>
+            <dt>访问：</dt>
+            <dd title="437059">
+                43万+            </dd>
+        </dl>
+        <dl>
+            <dt>积分：</dt>
+            <dd title="2917">
+                2917            </dd>
+        </dl>
+        <dl title="19501">
+            <dt>排名：</dt>
+            <dd>1万+</dd>
+        </dl>
+    </div>
+        <div class="badge-box d-flex">
+        <span>勋章：</span>
+                        <div class="icon-badge" title="持之以恒">
+            <div class="mouse-box">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#csdnc-m-lasting"></use>
+                </svg>
+                <div class="icon-arrow"></div>
+            </div>
+            <div class="grade-detail-box">
+                <div class="pos-box">
+                    <div class="left-box d-flex justify-content-center align-items-center flex-column">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#csdnc-m-lasting"></use>
+                        </svg>
+                        <p>持之以恒</p>
+                    </div>
+                    <div class="right-box d-flex justify-content-center align-items-center">
+                        授予每个自然月内发布4篇或4篇以上原创或翻译IT博文的用户。不积跬步无以至千里，不积小流无以成江海，程序人生的精彩需要坚持不懈地积累！
+                    </div>
+                </div>
+            </div>
+        </div>
+                                                <script>
+            (function ($) {
+                setTimeout(function(){
+                    $('div.icon-badge.show-moment').removeClass('show-moment');
+                }, 5000);
+            })(window.jQuery)
+        </script>
+    </div>
+    </div>
+		    <div class="csdn-tracking-statistics mb8 box-shadow" data-pid="blog" data-mod="popu_4" style="height:250px;">
+    <div class="aside-content text-center" id="cpro_u2734133">
+      <div id="kp_box_56" data-pid="56" data-track-view='{"mod":"kp_popu_56-876","con":",,"}' data-track-click='{"mod":"kp_popu_56-876","con":",,"}'><!-- 广告位：PC-博客内页左上视窗 -->
+<script>
+(function() {
+    var s = "_" + Math.random().toString(36).slice(2);
+    document.write('<div id="' + s + '"></div>');
+    (window.slotbydup=window.slotbydup || []).push({
+        id: '6096221',
+        container: s,
+        size: '300,250',
+        display: 'inlay-fix'
+    });
+})();
+</script>
+<script src="http://dup.baidustatic.com/js/os.js"></script></div>    </div>
+</div>
+		    <div id="asideNewArticle" class="aside-box">
+    <h3 class="aside-title">最新文章</h3>
+    <div class="aside-content">
+        <ul class="inf_list clearfix csdn-tracking-statistics tracking-click" data-mod="popu_382">
+                        <li class="clearfix">
+                <a href="https://blog.csdn.net/zjiang1994/article/details/84591864" target="_blank">如何实现扫码登陆</a>
+            </li>
+                        <li class="clearfix">
+                <a href="https://blog.csdn.net/zjiang1994/article/details/79880806" target="_blank">TinyMCE工具栏配置详解</a>
+            </li>
+                        <li class="clearfix">
+                <a href="https://blog.csdn.net/zjiang1994/article/details/79856058" target="_blank">TinyMCE菜单配置详解</a>
+            </li>
+                        <li class="clearfix">
+                <a href="https://blog.csdn.net/zjiang1994/article/details/79851439" target="_blank">Vue用axios实现TinyMCE的图片上传功能</a>
+            </li>
+                        <li class="clearfix">
+                <a href="https://blog.csdn.net/zjiang1994/article/details/79809687" target="_blank">Vue.Draggable 文档总结</a>
+            </li>
+                    </ul>
+    </div>
+</div>
+		    <div id="asideColumn" class="aside-box">
+    <h3 class="aside-title">博主专栏</h3>
+    <div class="aside-content">
+        <ul class="column-box csdn-tracking-statistics tracking-click" data-mod="popu_520" >
+                            <li class="clearfix">
+                    <div class="img-box float-left">
+                        <a class="d-flex align-items-center" href="https://blog.csdn.net/zjiang1994/column/info/21439">
+                            <img src="//img-blog.csdn.net/20180410143549057?imageView2/5/w/120/h/120" alt="">
+                        </a>
+                    </div>
+                    <div class="info">
+                        <p class="title"><a href="https://blog.csdn.net/zjiang1994/column/info/21439">TinyMCE配置详解</a></p>
+                        <div class="data">文章数：<span class="count">3 篇</span> 访问量：<span>4244</span></div>
+                    </div>
+                </li>
+                    </ul>
+    </div>
+    </div>
+		    <div id="asideCategory" class="aside-box flexible-box">
+    <h3 class="aside-title">个人分类</h3>
+    <div class="aside-content">
+        <ul>
+                        <li>
+                <a class="clearfix" href="https://blog.csdn.net/zjiang1994/article/category/6332368">
+                    <span class="title oneline">笔记</span>
+                    <span class="count float-right">81篇</span>
+                </a>
+            </li>
+                        <li>
+                <a class="clearfix" href="https://blog.csdn.net/zjiang1994/article/category/6374370">
+                    <span class="title oneline">例子</span>
+                    <span class="count float-right">16篇</span>
+                </a>
+            </li>
+                        <li>
+                <a class="clearfix" href="https://blog.csdn.net/zjiang1994/article/category/6374371">
+                    <span class="title oneline">配置方法</span>
+                    <span class="count float-right">12篇</span>
+                </a>
+            </li>
+                        <li>
+                <a class="clearfix" href="https://blog.csdn.net/zjiang1994/article/category/6378937">
+                    <span class="title oneline">PHP</span>
+                    <span class="count float-right">28篇</span>
+                </a>
+            </li>
+                        <li>
+                <a class="clearfix" href="https://blog.csdn.net/zjiang1994/article/category/6396052">
+                    <span class="title oneline">读书笔记</span>
+                    <span class="count float-right">12篇</span>
+                </a>
+            </li>
+                        <li>
+                <a class="clearfix" href="https://blog.csdn.net/zjiang1994/article/category/6424707">
+                    <span class="title oneline">laravel</span>
+                    <span class="count float-right">17篇</span>
+                </a>
+            </li>
+                        <li>
+                <a class="clearfix" href="https://blog.csdn.net/zjiang1994/article/category/6436108">
+                    <span class="title oneline">Python</span>
+                    <span class="count float-right">9篇</span>
+                </a>
+            </li>
+                        <li>
+                <a class="clearfix" href="https://blog.csdn.net/zjiang1994/article/category/6654218">
+                    <span class="title oneline">smarty</span>
+                    <span class="count float-right">4篇</span>
+                </a>
+            </li>
+                        <li>
+                <a class="clearfix" href="https://blog.csdn.net/zjiang1994/article/category/6843846">
+                    <span class="title oneline">MySQL</span>
+                    <span class="count float-right">3篇</span>
+                </a>
+            </li>
+                        <li>
+                <a class="clearfix" href="https://blog.csdn.net/zjiang1994/article/category/6957382">
+                    <span class="title oneline">Nginx</span>
+                    <span class="count float-right">3篇</span>
+                </a>
+            </li>
+                        <li>
+                <a class="clearfix" href="https://blog.csdn.net/zjiang1994/article/category/7090984">
+                    <span class="title oneline">设计模式</span>
+                    <span class="count float-right">1篇</span>
+                </a>
+            </li>
+                        <li>
+                <a class="clearfix" href="https://blog.csdn.net/zjiang1994/article/category/7297885">
+                    <span class="title oneline">数据结构</span>
+                    <span class="count float-right">8篇</span>
+                </a>
+            </li>
+                        <li>
+                <a class="clearfix" href="https://blog.csdn.net/zjiang1994/article/category/7377062">
+                    <span class="title oneline">vue-js</span>
+                    <span class="count float-right">3篇</span>
+                </a>
+            </li>
+                        <li>
+                <a class="clearfix" href="https://blog.csdn.net/zjiang1994/article/category/7419376">
+                    <span class="title oneline">前端</span>
+                    <span class="count float-right">6篇</span>
+                </a>
+            </li>
+                    </ul>
+    </div>
+        <p class="text-center">
+        <a class="btn btn-link-blue flexible-btn" data-fbox="aside-archive">展开</a>
+    </p>
+    </div>
+		    <div id="asideArchive" class="aside-box flexible-box">
+    <h3 class="aside-title">归档</h3>
+    <div class="aside-content">
+        <ul class="archive-list">
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/zjiang1994/article/month/2018/11">
+                    2018年11月                    <span class="count float-right">1篇</span>
+                </a>
+            </li>
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/zjiang1994/article/month/2018/04">
+                    2018年4月                    <span class="count float-right">4篇</span>
+                </a>
+            </li>
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/zjiang1994/article/month/2018/01">
+                    2018年1月                    <span class="count float-right">7篇</span>
+                </a>
+            </li>
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/zjiang1994/article/month/2017/12">
+                    2017年12月                    <span class="count float-right">4篇</span>
+                </a>
+            </li>
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/zjiang1994/article/month/2017/11">
+                    2017年11月                    <span class="count float-right">6篇</span>
+                </a>
+            </li>
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/zjiang1994/article/month/2017/08">
+                    2017年8月                    <span class="count float-right">15篇</span>
+                </a>
+            </li>
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/zjiang1994/article/month/2017/07">
+                    2017年7月                    <span class="count float-right">1篇</span>
+                </a>
+            </li>
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/zjiang1994/article/month/2017/06">
+                    2017年6月                    <span class="count float-right">4篇</span>
+                </a>
+            </li>
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/zjiang1994/article/month/2017/04">
+                    2017年4月                    <span class="count float-right">2篇</span>
+                </a>
+            </li>
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/zjiang1994/article/month/2017/03">
+                    2017年3月                    <span class="count float-right">1篇</span>
+                </a>
+            </li>
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/zjiang1994/article/month/2017/02">
+                    2017年2月                    <span class="count float-right">1篇</span>
+                </a>
+            </li>
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/zjiang1994/article/month/2017/01">
+                    2017年1月                    <span class="count float-right">3篇</span>
+                </a>
+            </li>
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/zjiang1994/article/month/2016/12">
+                    2016年12月                    <span class="count float-right">2篇</span>
+                </a>
+            </li>
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/zjiang1994/article/month/2016/11">
+                    2016年11月                    <span class="count float-right">5篇</span>
+                </a>
+            </li>
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/zjiang1994/article/month/2016/10">
+                    2016年10月                    <span class="count float-right">5篇</span>
+                </a>
+            </li>
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/zjiang1994/article/month/2016/09">
+                    2016年9月                    <span class="count float-right">14篇</span>
+                </a>
+            </li>
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/zjiang1994/article/month/2016/08">
+                    2016年8月                    <span class="count float-right">11篇</span>
+                </a>
+            </li>
+                        <!--归档统计-->
+            <li>
+                <a href="https://blog.csdn.net/zjiang1994/article/month/2016/07">
+                    2016年7月                    <span class="count float-right">3篇</span>
+                </a>
+            </li>
+                    </ul>
+    </div>
+        <p class="text-center">
+        <a class="btn btn-link-blue flexible-btn" data-fbox="aside-archive">展开</a>
+    </p>
+    </div>
+		    <div id="asideHotArticle" class="aside-box">
+	<h3 class="aside-title">热门文章</h3>
+	<div class="aside-content">
+		<ul class="hotArticle-list csdn-tracking-statistics tracking-click" data-mod="popu_521">
+							<li>
+					<a href="https://blog.csdn.net/zjiang1994/article/details/52679429">Python BeautifulSoup [解决方法] TypeError: list indices must be integers or slices, not str</a>
+					<p class="read">阅读数 <span>55748</span></p>
+				</li>
+							<li>
+					<a href="https://blog.csdn.net/zjiang1994/article/details/52779537">scrapy爬虫框架入门实例</a>
+					<p class="read">阅读数 <span>52348</span></p>
+				</li>
+							<li>
+					<a href="https://blog.csdn.net/zjiang1994/article/details/52689144">Python3 Scrapy 安装方法 （一脸辛酸泪）</a>
+					<p class="read">阅读数 <span>51775</span></p>
+				</li>
+							<li>
+					<a href="https://blog.csdn.net/zjiang1994/article/details/72876193">Nginx的安装与配置（PHP）</a>
+					<p class="read">阅读数 <span>38261</span></p>
+				</li>
+							<li>
+					<a href="https://blog.csdn.net/zjiang1994/article/details/74925039">CentOS7 配置SOCKS5代理服务</a>
+					<p class="read">阅读数 <span>33834</span></p>
+				</li>
+					</ul>
+	</div>
+</div>
+		    <div id="asideNewComments" class="aside-box">
+    <h3 class="aside-title">最新评论</h3>
+    <div class="aside-content">
+        <ul class="newcomment-list">
+                        <li>
+                <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/zjiang1994/article/details/79880806#comments">TinyMCE工具栏配置详解</a>
+                <p class="comment ellipsis">
+                    <a href="https://my.csdn.net/zhongxiangjinn" class="user-name" target="_blank">zhongxiangjinn：</a>很好                </p>
+            </li>
+                        <li>
+                <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/zjiang1994/article/details/79851439#comments">Vue用axios实现TinyMC...</a>
+                <p class="comment ellipsis">
+                    <a href="https://my.csdn.net/qq_29899023" class="user-name" target="_blank">qq_29899023：</a>我的success(res.data.url)之后报了一个  Failed to execute 'readAsDataURL' on 'FileReader': parameter 1 is not of type 'Blob'.                </p>
+            </li>
+                        <li>
+                <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/zjiang1994/article/details/74925039#comments">CentOS7 配置SOCKS5代...</a>
+                <p class="comment ellipsis">
+                    <a href="https://my.csdn.net/weixin_44684681" class="user-name" target="_blank">weixin_44684681：</a>能留个联系方式吗                </p>
+            </li>
+                        <li>
+                <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/zjiang1994/article/details/79809687#comments">Vue.Draggable 文档总结</a>
+                <p class="comment ellipsis">
+                    <a href="https://my.csdn.net/not_in_mountain" class="user-name" target="_blank">not_in_mountain：</a>draggable克隆时如何深克隆呢                </p>
+            </li>
+                        <li>
+                <a class="title text-truncate" target="_blank" href="https://blog.csdn.net/zjiang1994/article/details/53513377#comments">Tkinter选择路径功能的实现</a>
+                <p class="comment ellipsis">
+                    <a href="https://my.csdn.net/qq_40675506" class="user-name" target="_blank">qq_40675506：</a>大佬，帮忙解决下我的纠结，谢谢
+
+你上面程序返回来的路径例如：D：/music/a     这个路径在程序中不能用啊
+
+但真正的路径是这样写的：D：\music\a
+
+我想做一个小界面,用到 (路径选择，打开选择的路径)，，文件目录两者之间有‘\’‘/’之分 。
+
+[code=python]
+
+[/code]                </p>
+            </li>
+                    </ul>
+    </div>
+</div>
+		<div id="asideFooter">
+			
+		<div class="aside-box">
+			<div id="kp_box_57" data-pid="57" data-track-view='{"mod":"kp_popu_57-707","con":",,"}' data-track-click='{"mod":"kp_popu_57-707","con":",,"}'><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 博客内页左下视窗-20181130 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-1076724771190722"
+     data-ad-slot="1894159733"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>		</div>
+				<div class="aside-box">
+			<div class="persion_article">
+			</div>
+		</div>
+	</div>
+</aside>
+<script src="https://csdnimg.cn/pubfooter/js/publib_footer-1.0.3.js" data-isfootertrack="false" type="text/javascript"></script>
+<script>
+	$("a.flexible-btn").click(function(){
+		$(this).parents('div.aside-box').removeClass('flexible-box');
+		$(this).remove();
+	})
+</script>
+</div>
+<div class="mask-dark"></div>
+<div class="pulllog-box" style="display: block;">
+	<div class="pulllog clearfix">
+		<span class="text float-left">
+            <div id="dmp_ad_69"><div id="kp_box_69" data-pid="69" data-track-view='{"mod":"kp_popu_69-796","con":",,"}' data-track-click='{"mod":"kp_popu_69-796","con":",,"}'><div style="float:left;margin-right:5px;border:1px solid #f13d3d;padding:2px 5px 0px 5px;">
+<a href="https://edu.csdn.net/topic/ai30?utm_source=ditong" target="_blank" style="color:#f13d3d;font-weight:bold;text-decoration:none;font-size:15px;">人工智能转型测试</a>
+</div>
+
+<div style="float:left;margin-right:5px;border:1px solid #00BFFF;padding:2px 5px 0px 5px;background:#FFF0F5;">
+<a href="https://edu.csdn.net/topic/ai30?utm_source=ditong" target="_blank" style="color:#00BFFF;font-weight:bold;text-decoration:none;font-size:15px;">转型AI人工智能指南</a>
+</div>
+
+<div style="float:left;margin-right:5px;border:1px solid #f13d3d;padding:2px 5px 0px 5px;">
+<a href="https://edu.csdn.net/topic/python115?utm_source=ditong" target="_blank" style="color:#f13d3d;font-weight:bold;text-decoration:none;font-size:15px;">Python小白如何学</a>
+</div>
+
+<div style="float:left;margin-right:5px;border:1px solid #00BFFF;padding:2px 5px 0px 5px;background:#FFF0F5;">
+<a href="https://gitbook.cn/gitchat/column/5c86261f029620739b167498?utm_source=wzl190315" target="_blank" style="color:#00BFFF;font-weight:bold;text-decoration:none;font-size:15px;">28 天算法训练营</a>
+</div>
+
+<div style="float:left;margin-right:5px;border:1px solid #f13d3d;padding:2px 5px 0px 5px;">
+<a href="http://hdg12tzyd1ot89h9.mikecrm.com/8z9C2RJ" target="_blank" style="color:#f13d3d;font-weight:bold;text-decoration:none;font-size:15px;">开发者调查报告</a>
+</div>
+
+
+
+<div style="float:left;">
+<script type="text/javascript" src="//rabc1.iteye.com/common/js/ndr3h.js?b=wosyvccl"></script>
+<!-- 长文字链
+<script type="text/javascript" src="//rabc1.iteye.com/common/5klj5.js?kfxbghx=bx"></script>
+-->
+</div></div></div>            		</span>
+		<div class="pulllog-btn float-right clearfix">
+            <div class="float-left csdn-tracking-statistics tracking-click" data-mod="popu_557">
+                <a class="pulllog-login">登录</a>
+            </div>
+            <div class="pulllog-sigin float-left csdn-tracking-statistics tracking-click" data-mod="popu_558">
+                <a href="https://passport.csdn.net/account/mobileregister" target="_blank">注册</a>
+            </div>
+            <button class="btn-close">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#csdnc-times"></use>
+                </svg>
+            </button>
+		</div>
+	</div>
+</div>
+<div id="loginWrap" style="display:none"></div>
+<div class="tool-box">
+	<ul class="meau-list">
+		<li class="btn-like-box long-width">
+			<button class=" long-height hover-box btn-like " title="点赞">
+				<svg class="icon active hover-hide" aria-hidden="true">
+					<use xlink:href="#csdnc-thumbsup-ok"></use>
+				</svg>
+				<svg class="icon no-active hover-hide" aria-hidden="true">
+					<use xlink:href="#csdnc-thumbsup"></use>
+				</svg>
+				<span class="hover-show text-box text">
+					<span class="no-active">点赞</span>
+					<span class="active">取消点赞</span>
+				</span>
+				<p>29</p>
+			</button>
+		</li>
+		<li class="">
+						<a class="btn-comments long-height hover-box" title="写评论" href="#commentBox">
+				<svg class="icon hover-hide" aria-hidden="true">
+					<use xlink:href="#csdnc-comments"></use>
+				</svg>
+				<span class="hover-show text">评论</span>
+				<p class="">
+						56				</p>
+			</a>
+		</li>
+		<li class="toc-container-box" id="liTocBox">
+			<button class="btn-toc low-height hover-box" title="目录">
+				<svg class="icon hover-hide" aria-hidden="true">
+					<use xlink:href="#csdnc-contents"></use>
+				</svg>
+				<span class="hover-show text">目录</span>
+			</button>
+			<div class="toc-container">
+				<div class="pos-box">
+					<div class="icon-arrow"></div>
+					<div class="scroll-box">
+						<div class="toc-box"></div>
+					</div>
+				</div>
+				<div class="opt-box">
+					<button class="btn-opt prev nomore" title="向上">
+						<svg class="icon" aria-hidden="true">
+							<use xlink:href="#csdnc-chevronup"></use>
+						</svg>
+					</button>
+					<button class="btn-opt next">
+						<svg class="icon" aria-hidden="true">
+							<use xlink:href="#csdnc-chevrondown"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</li>
+		<li>
+			<button class="btn-bookmark low-height hover-box" title="收藏">
+				<svg class="icon active hover-hide" aria-hidden="true">
+					<use xlink:href="#csdnc-bookmark-ok"></use>
+				</svg>
+				<svg class="icon no-active hover-hide" aria-hidden="true">
+					<use xlink:href="#csdnc-bookmark"></use>
+				</svg>
+					<span class="hover-show text">收藏</span>
+				<!-- <span class="hover-show text-box text">
+					<span class="no-active">收藏</span>
+					<span class="active">取消收藏</span>
+				</span> -->
+			</button>
+		</li>
+		<li class="bdsharebuttonbox">
+			<div class="weixin-qr btn-comments low-height hover-box" >
+        <a href="#" class="bds_weixin clear-share-style" data-cmd="weixin" title="手机看"></a>
+				<svg class="icon hover-hide" aria-hidden="true">
+					<use xlink:href="#csdnc-usephone"></use>
+				</svg>
+				<span class="hover-show text text3">
+					手机看
+				</span>
+			</div>
+		</li>
+							<li class="widescreen-hide">
+				<a class="btn-comments low-height hover-box" href="https://blog.csdn.net/zjiang1994/article/details/52689144" title="Python3 Scrapy 安装方法 （一脸辛酸泪）">
+					<svg class="icon hover-hide" aria-hidden="true">
+						<use xlink:href="#csdnc-chevronleft"></use>
+					</svg>
+					<span class="hover-show text text3">上一篇</span>
+				</a>
+			</li>
+								<li class="widescreen-hide">
+			<a class="btn-comments hover-box low-height" href="https://blog.csdn.net/zjiang1994/article/details/52794945" title="PHP生成简单验证码（例子）">
+				<svg class="icon hover-hide" aria-hidden="true">
+					<use xlink:href="#csdnc-chevronright"></use>
+				</svg>
+				<span class="hover-show text text3">下一篇</span>
+			</a>
+		</li>
+						<!-- 宽屏更多按钮 -->
+		<li class="widescreen-more">
+			<a class="btn-comments chat-ask-button low-height hover-box" title="快问" href="#chatqa">
+				<svg class="icon hover-hide" aria-hidden="true">
+					<use xlink:href="#csdnc-more"></use>
+				</svg>
+				<span class="hover-show text">更多</span>
+				
+			</a>
+			<ul class="widescreen-more-box">
+													<li class="widescreen-more">
+						<a class="btn-comments low-height hover-box" href="https://blog.csdn.net/zjiang1994/article/details/52689144" title="Python3 Scrapy 安装方法 （一脸辛酸泪）">
+							<svg class="icon hover-hide" aria-hidden="true">
+								<use xlink:href="#csdnc-chevronleft"></use>
+							</svg>
+							<span class="hover-show text text3">上一篇</span>
+						</a>
+					</li>
+																<li class="widescreen-more">
+					<a class="btn-comments hover-box low-height" href="https://blog.csdn.net/zjiang1994/article/details/52794945" title="PHP生成简单验证码（例子）">
+						<svg class="icon hover-hide" aria-hidden="true">
+							<use xlink:href="#csdnc-chevronright"></use>
+						</svg>
+						<span class="hover-show text text3">下一篇</span>
+					</a>
+				</li>
+							</ul>
+		</li>
+	</ul>
+</div>
+<script>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "1", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'https://csdnimg.cn/static/api/js/share.js?v=89860594'];</script>
+<script>
+    var recommendCount = 64;
+    recommendCount = recommendCount > 1 ? (recommendCount + (recommendCount>6 ? 2 : 1)) : recommendCount;
+    var articleTit = articleTitles;
+    var ChannelId = 16;
+    var articleId = "52779537";
+    var commentscount = 56;
+    var islock = false;
+    var curentUrl = "https://blog.csdn.net/zjiang1994/article/details/52779537";
+    var myUrl = "https://my.csdn.net/";
+    //1禁止评论，2正常
+    var commentAuth = 2;
+    //百度搜索
+    var baiduKey = "scrapy爬虫框架入门实例 - Clew123的博客";
+    var needInsertBaidu = false;
+    // 代码段样式
+    var codeStyle = 'atom-one-dark';
+		var highlight = ["scrapy","\u722c\u866b\u6846\u67b6","\u5165\u95e8","\u5b9e\u4f8b"];//高亮数组
+		// 相关推荐博主数据
+    var RecommendBlogExpertList = [{"user_name":"qq_40147863","nick_name":"\u8096\u670b\u4f1f","avatar":"https:\/\/avatar.csdn.net\/2\/B\/3\/3_qq_40147863.jpg","is_expert":true,"article_count":305,"rank":"1000+"},{"user_name":"Raptor","nick_name":"\u731b\u79bd","avatar":"https:\/\/avatar.csdn.net\/2\/0\/0\/3_raptor.jpg","is_expert":true,"article_count":268,"rank":"655"},{"user_name":"offbye","nick_name":"offbye","avatar":"https:\/\/avatar.csdn.net\/2\/8\/7\/3_offbye.jpg","is_expert":true,"article_count":576,"rank":"642"},{"user_name":"gates0087","nick_name":"senga07","avatar":"https:\/\/avatar.csdn.net\/F\/C\/3\/3_gates0087.jpg","is_expert":false,"article_count":24,"rank":"\u5343\u91cc\u4e4b\u5916"},{"user_name":"jun_1129","nick_name":"jun_1129","avatar":"https:\/\/avatar.csdn.net\/A\/E\/3\/3_jun_1129.jpg","is_expert":false,"article_count":1,"rank":"\u5343\u91cc\u4e4b\u5916"},{"user_name":"freeking101","nick_name":"\u64d2\u8d3c\u5148\u64d2\u738b","avatar":"https:\/\/avatar.csdn.net\/F\/9\/6\/3_freeking101.jpg","is_expert":false,"article_count":347,"rank":"4000+"},{"user_name":"lizhongxin541","nick_name":"lizhongxin541","avatar":"https:\/\/avatar.csdn.net\/F\/4\/8\/3_lizhongxin541.jpg","is_expert":false,"article_count":2,"rank":"\u5343\u91cc\u4e4b\u5916"},{"user_name":"python233","nick_name":"\u6572\u4ee3\u7801\u7684\u7334","avatar":"https:\/\/avatar.csdn.net\/3\/C\/9\/3_python233.jpg","is_expert":false,"article_count":64,"rank":"\u5343\u91cc\u4e4b\u5916"},{"user_name":"qq_30175203","nick_name":"smile_milk1992","avatar":"https:\/\/avatar.csdn.net\/8\/D\/4\/3_qq_30175203.jpg","is_expert":false,"article_count":74,"rank":"\u5343\u91cc\u4e4b\u5916"},{"user_name":"starkpan","nick_name":"starkpan","avatar":"https:\/\/avatar.csdn.net\/3\/5\/3\/3_starkpan.jpg","is_expert":false,"article_count":51,"rank":"\u5343\u91cc\u4e4b\u5916"}];
+	var articleType = 1;
+	var CopyrightContent = '本文为博主原创文章，未经博主允许不得转载。';
+    var current_user_name = '';
+</script>
+<script src="https://csdnimg.cn/public/sandalstrap/1.4/js/sandalstrap.min.js"></script>
+<script src="https://csdnimg.cn/release/phoenix/vendor/pagination/paging.js"></script>
+<script src='https://csdnimg.cn/public/common/gotop/js/goTop-v1.0.min.js?v201811201455'></script>
+<script>
+    GoTop({
+        right: 8,
+        hasReport: true,
+        reportFun: function() {
+            showReport(false,articleTit);
+        }
+    })
+</script>
+</body>
+
+<!-- 高亮未与 markdown兼容  -->
+	<link rel="stylesheet" href="https://csdnimg.cn/release/blog_editor_html/release1.3.8/ckeditor/plugins/codesnippet/lib/highlight/styles/atom-one-dark.css">
+	<script type="text/javascript" src="https://csdnimg.cn/release/phoenix/production/pc_wap_common-3bc59f8f2b.js" /></script>
+	
+	<!-- <script type="text/javascript" src="https://csdnimg.cn/release/phoenix/production/markdownCopy-5c7fa7386e.js" /></script> -->
+
+
+<script src="//g.csdnimg.cn/??login-box/1.0.5/login-box.js,login-box/1.0.5/login-auto.js?t=20190307095522"></script>
+<script src="https://csdnimg.cn/release/phoenix/template/js/common-38af002ba7.min.js"></script>
+<script src="https://csdnimg.cn/release/phoenix/template/js/detail-715f188409.min.js"></script>
+
+	<script src="https://csdnimg.cn/release/phoenix/themes/skin3-template/skin3-template-fc7383b956.min.js"></script>
+
+
+
+<!-- <script type="text/javascript" src="//g.csdnimg.cn/check-adb/1.0.2/check-adb.js"></script> -->
+
+<script type="text/javascript" src="https://csdnimg.cn/release/blog_mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            "HTML-CSS": {
+                    linebreaks: { automatic: true, width: "94%container" },
+                    imageFont: null
+            },
+            tex2jax: {
+                preview: "none"
+            },
+            mml2jax: {
+                preview: 'none'
+            }
+    });
+</script>
+<script type="text/javascript">
+    </script>
+<script src="https://gh.bdstatic.com/static/gh/js/sdk/bword.min.js"></script>
+</html>
